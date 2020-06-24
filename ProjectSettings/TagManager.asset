@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - foe_attack_area
+  - foe_vuln_area_weapon
+  - foe_vuln_area_body
+  - pickable_weapon
+  - Enemy
+  - weapon_dist
+  - weapon_melee
+  - ally_insect
+  - player_attack_area
+  - level_start_zone
+  - game_controller
+  - box
+  - npc_evacuate_point
+  - weapon
+  - level_end_zone_1
+  - level_end_zone_2
+  - NPC_friend
+  - pickable_dna
+  - pickable_dna_part
+  - pickable_pill
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Player
+  - Enemy
+  - Ally
+  - DnaPart
+  - DnaPartSurfHolder
+  - Weapon
+  - NPC
+  - Pickable
+  - LevelZone
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1837315599
+    locked: 0
+  - name: Ground
+    uniqueID: 523205505
+    locked: 0
+  - name: Enemy
+    uniqueID: 3296563961
+    locked: 0
+  - name: NPC
+    uniqueID: 371565253
+    locked: 0
+  - name: 'Prison '
+    uniqueID: 4132525601
+    locked: 0
+  - name: Ally insect
+    uniqueID: 3532478107
+    locked: 0
+  - name: Hero
+    uniqueID: 3076381217
+    locked: 0
+  - name: Foreground
+    uniqueID: 2913453259
+    locked: 0
