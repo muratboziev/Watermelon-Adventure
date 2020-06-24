@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: d7df6fbd8eb82f4458f3c8fe965caf07
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6866411776231741053
+    second: earwig_a
+  - first:
+      213: -4366957410920391060
+    second: earwig_b
+  - first:
+      213: 7309831053903229593
+    second: earwig_h
+  - first:
+      213: 6036244239680380132
+    second: earwig_j
+  - first:
+      213: -1462553902592559390
+    second: earwig_t
+  - first:
+      213: -2109659113181249250
+    second: earwig_l1
+  - first:
+      213: 3062005701592840880
+    second: earwig_s
+  - first:
+      213: -5802415068935047781
+    second: earwig_w
+  - first:
+      213: -5982049165332475051
+    second: earwig_l2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: earwig_a
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 49
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0.8351814, y: 0.05317688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389e52c8eda95b0a0800000000000000
+      internalID: -6866411776231741053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earwig_b
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 33
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e94d43f537563c0800000000000000
+      internalID: -4366957410920391060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earwig_h
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 38
+        width: 12
+        height: 9
+      alignment: 9
+      pivot: {x: 0.9503253, y: 0.5067719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99275084d9cb17560800000000000000
+      internalID: 7309831053903229593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earwig_j
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 29
+        width: 4
+        height: 6
+      alignment: 9
+      pivot: {x: 0.37001944, y: 0.8342374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec95a3972c05c350800000000000000
+      internalID: 6036244239680380132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earwig_t
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 6
+        width: 6
+        height: 19
+      alignment: 9
+      pivot: {x: 0.2264169, y: 0.030506887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6fb1b79f6f3bbe0800000000000000
+      internalID: -1462553902592559390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earwig_l1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 14
+        width: 5
+        height: 5
+      alignment: 9
+      pivot: {x: 0.9085125, y: 0.88622934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e118aa9c63cf8b2e0800000000000000
+      internalID: -2109659113181249250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earwig_s
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 17
+        width: 20
+        height: 8
+      alignment: 9
+      pivot: {x: 0.034962654, y: 0.8818741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba79af56fd6e7a20800000000000000
+      internalID: 3062005701592840880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earwig_w
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 6
+        width: 24
+        height: 17
+      alignment: 9
+      pivot: {x: 0.07286707, y: 0.10464853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95b0c0cc3ea97fa0800000000000000
+      internalID: -5802415068935047781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earwig_l2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 7
+        width: 7
+        height: 6
+      alignment: 9
+      pivot: {x: 0.038435526, y: 0.84042645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5539f677afd7bfca0800000000000000
+      internalID: -5982049165332475051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

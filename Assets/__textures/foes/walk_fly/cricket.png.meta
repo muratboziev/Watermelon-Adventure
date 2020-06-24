@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 763b031bc1546864cac6e6e1117dcc06
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5871094851771035901
+    second: cricket_l11
+  - first:
+      213: 7832086663750117191
+    second: cricket_an2
+  - first:
+      213: 2874852735296293391
+    second: cricket_an1
+  - first:
+      213: 3248575081804540426
+    second: cricket_l21
+  - first:
+      213: 9142464561825164471
+    second: cricket_a2
+  - first:
+      213: 785216548530958746
+    second: cricket_l12
+  - first:
+      213: -6597520426434279081
+    second: cricket_a1
+  - first:
+      213: -3726592564849361316
+    second: cricket_l22
+  - first:
+      213: 2483013331596528970
+    second: cricket_l122
+  - first:
+      213: -748800073726452252
+    second: cricket_w
+  - first:
+      213: 2837098107559692957
+    second: cricket_h
+  - first:
+      213: -1810980386350487935
+    second: cricket_b
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cricket_l11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 83
+        width: 16
+        height: 9
+      alignment: 9
+      pivot: {x: 0.85607815, y: 0.74160933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0ff6a49a15a7150800000000000000
+      internalID: 5871094851771035901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_an2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 91
+        width: 8
+        height: 5
+      alignment: 9
+      pivot: {x: 0.8698243, y: 0.22133942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74766e2135921bc60800000000000000
+      internalID: 7832086663750117191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_an1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 89
+        width: 22
+        height: 7
+      alignment: 9
+      pivot: {x: 0.97674525, y: 0.09085737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a45e4c45785e720800000000000000
+      internalID: 2874852735296293391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_l21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 74
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.8440225, y: 0.8579979}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a252143d1451d20800000000000000
+      internalID: 3248575081804540426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_a2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 62
+        width: 13
+        height: 13
+      alignment: 9
+      pivot: {x: 0.82748294, y: 0.82748294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcaf23841f80ee70800000000000000
+      internalID: 9142464561825164471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_l12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 61
+        width: 10
+        height: 13
+      alignment: 9
+      pivot: {x: 0.83725226, y: 0.8992169}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9132f66a46a5ea00800000000000000
+      internalID: 785216548530958746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_a1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 66
+        width: 14
+        height: 7
+      alignment: 9
+      pivot: {x: 0.9395507, y: 0.5276435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75940089026e074a0800000000000000
+      internalID: -6597520426434279081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_l22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 58
+        width: 7
+        height: 8
+      alignment: 9
+      pivot: {x: 0.1959076, y: 0.8628359}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eba8d7ecb784cc0800000000000000
+      internalID: -3726592564849361316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_l122
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 44
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.92089057, y: 0.86943334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dce52387f657220800000000000000
+      internalID: 2483013331596528970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_w
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 31
+        width: 27
+        height: 14
+      alignment: 9
+      pivot: {x: 0.020279355, y: 0.49999973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed9fbddc4abb95f0800000000000000
+      internalID: -748800073726452252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_h
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 33
+        width: 25
+        height: 15
+      alignment: 9
+      pivot: {x: 0.96153075, y: 0.5574801}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a470e72b56f5720800000000000000
+      internalID: 2837098107559692957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricket_b
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 4
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18621600fea1ed6e0800000000000000
+      internalID: -1810980386350487935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

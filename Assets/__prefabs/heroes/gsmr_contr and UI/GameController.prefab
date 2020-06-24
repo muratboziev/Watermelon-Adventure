@@ -1,0 +1,1560 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2806626775147575797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2806626775147575796}
+  m_Layer: 0
+  m_Name: foe inst point 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2806626775147575796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626775147575797}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -631.6, y: -146.49, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2806626776297685345}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2806626775986978600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2806626775986978603}
+  m_Layer: 0
+  m_Name: foe inst point 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2806626775986978603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626775986978600}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1066, y: -48.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2806626776297685345}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2806626776297685358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2806626776297685345}
+  m_Layer: 0
+  m_Name: foe instantiation points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2806626776297685345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776297685358}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 956.9474, y: 0, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2806626776937159058}
+  - {fileID: 2806626775986978603}
+  - {fileID: 2806626775147575796}
+  m_Father: {fileID: 2806626776988514005}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2806626776937159059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2806626776937159058}
+  m_Layer: 0
+  m_Name: foe inst point 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2806626776937159058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776937159059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -49, y: -172, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2806626776297685345}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2806626776988514003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2806626776988514005}
+  - component: {fileID: 2806626776988514002}
+  - component: {fileID: 2806626776988514025}
+  - component: {fileID: 2806626776988514027}
+  - component: {fileID: 2806626776988514024}
+  - component: {fileID: 2806626776988514026}
+  - component: {fileID: 2806626776988514004}
+  - component: {fileID: 2806626776988514007}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: game_controller
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2806626776988514005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776988514003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -102.196526, y: 389.59323, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2806626776297685345}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2806626776988514002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776988514003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85a4e3b90b340c4e9380d7ebd693e65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game_progr: {fileID: 0}
+  hero_contr: {fileID: 0}
+  bg_scroll_cont: {fileID: 0}
+  menu_man: {fileID: 0}
+  dialog_man: {fileID: 0}
+  evo_pan_man: {fileID: 0}
+  npc_contr: {fileID: 0}
+  box_cont: {fileID: 0}
+  scenes:
+  - name: act1_level1
+    next_scene_name: act1_level2
+    opened: 1
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level2
+    next_scene_name: act1_level3
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level3
+    next_scene_name: act1_level4
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level4
+    next_scene_name: act1_level5
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level5
+    next_scene_name: act1_level6
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level6
+    next_scene_name: act1_level7
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level7
+    next_scene_name: act1_level8
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level8
+    next_scene_name: act1_level9
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level9
+    next_scene_name: act1_level10
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_boss
+    next_scene_name: act2_level1
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level1
+    next_scene_name: act2_level2
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level2
+    next_scene_name: act2_level3
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level3
+    next_scene_name: act2_level4
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level4
+    next_scene_name: act2_level5
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level5
+    next_scene_name: act2_level6
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level6
+    next_scene_name: act2_level7
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level7
+    next_scene_name: act2_level8
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level8
+    next_scene_name: act2_level9
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level9
+    next_scene_name: act2_level10
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_level10
+    next_scene_name: act2_boss
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act2_boss
+    next_scene_name: act3_level1
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level1
+    next_scene_name: act3_level2
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level2
+    next_scene_name: act3_level3
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level3
+    next_scene_name: act3_level4
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level4
+    next_scene_name: act3_level5
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level5
+    next_scene_name: act3_level6
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level6
+    next_scene_name: act3_level7
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level7
+    next_scene_name: act3_level8
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level8
+    next_scene_name: act3_level9
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level9
+    next_scene_name: act3_level10
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_level10
+    next_scene_name: act3_boss
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act3_boss
+    next_scene_name: 
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  - name: act1_level10
+    next_scene_name: act1_boss
+    opened: 0
+    completed: 0
+    is_friend_saved: 0
+    is_dna_found: 0
+    is_boss_level: 0
+  character_data:
+  - name: watermelon
+    scene_name: 
+    full_name: joffrey the watermelon
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0.754717, b: 0.0585072, a: 0}
+    health_sprites:
+      protect: {fileID: 21300002, guid: 7ca45a8f9e153fd4b854505e5567e25d, type: 3}
+      full_hp: {fileID: 21300000, guid: 7ca45a8f9e153fd4b854505e5567e25d, type: 3}
+      health_sprites_3hp:
+      - {fileID: 21300008, guid: 7ca45a8f9e153fd4b854505e5567e25d, type: 3}
+      - {fileID: 21300004, guid: 7ca45a8f9e153fd4b854505e5567e25d, type: 3}
+      health_sprites_4hp:
+      - {fileID: 21300014, guid: 7ca45a8f9e153fd4b854505e5567e25d, type: 3}
+      - {fileID: 21300010, guid: 7ca45a8f9e153fd4b854505e5567e25d, type: 3}
+      - {fileID: 21300006, guid: 7ca45a8f9e153fd4b854505e5567e25d, type: 3}
+      dead: {fileID: 21300012, guid: 7ca45a8f9e153fd4b854505e5567e25d, type: 3}
+    dialog:
+      replica: []
+    prefab: {fileID: 1581699806039322434, guid: e4df73d85ecd335468c8c92fbf626963,
+      type: 3}
+  - name: apple
+    scene_name: act1_level1
+    full_name: Pit the Apple
+    saved_npc_sprite: {fileID: 21300000, guid: ae9822df4003d8145937075689c2f5e7, type: 3}
+    not_saved_npc_sprite: {fileID: 21300002, guid: ae9822df4003d8145937075689c2f5e7,
+      type: 3}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica:
+      - is_heroes_phrase: 0
+        phrase: joffrey, it's you? thank the fruit lord!
+      - is_heroes_phrase: 1
+        phrase: you are free now! i'll find the others
+    prefab: {fileID: 3437332189475055111, guid: 54de9c849b480a141a9dded0ae0c67f9,
+      type: 3}
+  - name: banana
+    scene_name: act1_level2
+    full_name: Mick the Banana
+    saved_npc_sprite: {fileID: 21300000, guid: 1a8532224235ccd46a62c3a6a7572257, type: 3}
+    not_saved_npc_sprite: {fileID: 21300002, guid: 1a8532224235ccd46a62c3a6a7572257,
+      type: 3}
+    name_text_color: {r: 1, g: 0.9990684, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica:
+      - is_heroes_phrase: 1
+        phrase: hey! you are good?
+      - is_heroes_phrase: 0
+        phrase: i'm fine, just bored a bit
+      - is_heroes_phrase: 1
+        phrase: see ya!
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: 
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 0}
+  - name: spider
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 1443357561667292, guid: ba8b1f0d02bd18b46a813e111e99fedd, type: 3}
+  - name: dragonfly
+    scene_name: 
+    full_name: 
+    saved_npc_sprite: {fileID: 0}
+    not_saved_npc_sprite: {fileID: 0}
+    name_text_color: {r: 0, g: 0, b: 0, a: 0}
+    health_sprites:
+      protect: {fileID: 0}
+      full_hp: {fileID: 0}
+      health_sprites_3hp: []
+      health_sprites_4hp: []
+      dead: {fileID: 0}
+    dialog:
+      replica: []
+    prefab: {fileID: 3749485204682005554, guid: 36cbcdc25b477654ab667c4cbb621b12,
+      type: 3}
+  player_p:
+    simple_points_gained_total: 0
+    evo_points_gained_total: 0
+    simple_points_gained_level: 0
+    evo_points_gained_level: 0
+    is_friend_saved_level: 0
+    is_dna_found_level: 0
+    is_friend_saved_total: 0
+    is_dna_found_total: 0
+  playable_character: 
+--- !u!114 &2806626776988514025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776988514003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70217edad7c1f647879f3e20d4b9006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero_contr: {fileID: 0}
+  gameplay_gui_manager: {fileID: 0}
+  hero_animator_controller: {fileID: 0}
+  weapons:
+  - name: katana
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 100
+      max_charges: 10
+      charges_left: 0
+      weight: 0.9
+      needs_reload: 1
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 3
+    animation_state: 7
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: shoe
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0.9
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 4
+    animation_state: 8
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: insecticide
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0.75
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 5
+    animation_state: 9
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: flamethrower
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0.7
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 6
+    animation_state: 10
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: shotgun
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 20
+      max_charges: 10
+      charges_left: 0
+      weight: 0.75
+      needs_reload: 1
+      accumulates_charges: 1
+      distance_attack: 1
+      impact_on_hero:
+        impact_time: 0.25
+        impact_val: {x: -80, y: 10}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 7
+    animation_state: 11
+    emit_timeout: 0
+    num_of_particles_to_emit: 7
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: gauss_gun
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0.8
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 8
+    animation_state: 12
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: minigun
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0.5
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 10
+    animation_state: 13
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: boxing
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0.9
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 0
+    animation_state: 0
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: roll
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 45
+      max_charges: 9999
+      charges_left: 9999
+      weight: 1
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0.2
+        impact_val: {x: 40, y: 0}
+    anim_layer_index: 2
+    animation_state: 4
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: spider
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0.9
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 11
+    animation_state: 15
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: dragonfly
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 100
+      max_charges: 1
+      charges_left: 0
+      weight: 0.9
+      needs_reload: 1
+      accumulates_charges: 1
+      distance_attack: 1
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 11
+    animation_state: 15
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - name: crossbow
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0.75
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    anim_layer_index: 11
+    animation_state: 15
+    emit_timeout: 0
+    num_of_particles_to_emit: 0
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      max_charges: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+--- !u!114 &2806626776988514027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776988514003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f72922755096814b8d768faad9fdb08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2806626776988514024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776988514003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e5d246691931046b400c495b39f347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2806626776988514026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776988514003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9abc069a37bb04e8a7326ca2fc1b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2806626776988514004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776988514003}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 859d9decb8a84b34ab702ef96e0b2b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foe_prefab: []
+  weap_man: {fileID: 0}
+  spawn_Manager: {fileID: 0}
+  gui_manager: {fileID: 0}
+  num_of_foe_to_inst: 1
+--- !u!114 &2806626776988514007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806626776988514003}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2e1c8fff0c8d84d921b0d2d0fab5aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foe_pool: {fileID: 0}
+  foe_inst_position: []
+  hero: {fileID: 0}
+  max_foes_at_moment: 0
+  total_foes_in_game: 0
+  spawn_time_delta: 3
+  foes_spawned_at_moment: 0

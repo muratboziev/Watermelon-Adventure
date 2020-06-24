@@ -1,0 +1,356 @@
+fileFormatVersion: 2
+guid: a7ded23e2e1a3aa45b2436a267356d6a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 767240402948846221
+    second: lytta_w
+  - first:
+      213: 3384246064748508044
+    second: lytta_ub
+  - first:
+      213: -4073549753218295438
+    second: lytta_b
+  - first:
+      213: 1366744380423793518
+    second: lytta_h
+  - first:
+      213: 2464934133347710667
+    second: lytta_j
+  - first:
+      213: 4407325404073777099
+    second: lytta_a
+  - first:
+      213: -4314102129282563912
+    second: lytta_l11
+  - first:
+      213: -3089987008601043269
+    second: lytta_l12
+  - first:
+      213: 1824079223709482167
+    second: lytta_l21
+  - first:
+      213: -8254689839469408682
+    second: lytta_l22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lytta_w
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 56
+        width: 46
+        height: 14
+      alignment: 9
+      pivot: {x: 0.037766725, y: 0.4709053}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82f71bd419c5aa00800000000000000
+      internalID: 767240402948846221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_ub
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 42
+        width: 39
+        height: 11
+      alignment: 9
+      pivot: {x: 0.034179345, y: 0.50740606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8339d98dd147fe20800000000000000
+      internalID: 3384246064748508044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_b
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 25
+        width: 49
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2791b800518d777c0800000000000000
+      internalID: -4073549753218295438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_h
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 14
+        width: 14
+        height: 10
+      alignment: 9
+      pivot: {x: 0.91897005, y: 0.5570265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bebedc5c6a7f210800000000000000
+      internalID: 1366744380423793518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_j
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 15
+        width: 4
+        height: 6
+      alignment: 9
+      pivot: {x: 0.8856411, y: 0.9130729}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6fce4d884353220800000000000000
+      internalID: 2464934133347710667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_a
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 13
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.87719584, y: 0.05695808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc75f5f9a17f92d30800000000000000
+      internalID: 4407325404073777099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_l11
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 8
+        height: 6
+      alignment: 9
+      pivot: {x: 0.8767654, y: 0.9503862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b04b5378fa3124c0800000000000000
+      internalID: -4314102129282563912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_l12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.83698684, y: 0.061346054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe43c7ef292e15d0800000000000000
+      internalID: -3089987008601043269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_l21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 2
+        width: 10
+        height: 8
+      alignment: 9
+      pivot: {x: 0.90091246, y: 0.9412217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcbf5bb36e605910800000000000000
+      internalID: 1824079223709482167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lytta_l22
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3
+        width: 7
+        height: 6
+      alignment: 9
+      pivot: {x: 0.84861976, y: 0.09327662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e46638353717d80800000000000000
+      internalID: -8254689839469408682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

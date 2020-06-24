@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 9770176ddaf6c8d4a92350003238d9bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4339849897575527381
+    second: praying_mantis_an
+  - first:
+      213: -6614976667939260323
+    second: praying_mantis_n
+  - first:
+      213: -1871159900107460150
+    second: praying_mantis_w
+  - first:
+      213: 5625964396693228782
+    second: praying_mantis_h
+  - first:
+      213: -6492955074757295301
+    second: praying_mantis_h2
+  - first:
+      213: -5383169550505196628
+    second: praying_mantis_s
+  - first:
+      213: 1576877767777579704
+    second: praying_mantis_a3
+  - first:
+      213: -5565654511151024851
+    second: praying_mantis_a2
+  - first:
+      213: 3897455614412409730
+    second: praying_mantis_b
+  - first:
+      213: 2692115447792209029
+    second: praying_mantis_a1
+  - first:
+      213: -5683392711857629198
+    second: praying_mantis_l2
+  - first:
+      213: 7207481498345521652
+    second: praying_mantis_l1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: praying_mantis_an
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 85
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.85718566, y: 0.012711843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cce7cf281c5c3c0800000000000000
+      internalID: -4339849897575527381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_n
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 76
+        width: 12
+        height: 20
+      alignment: 9
+      pivot: {x: 0.87718743, y: 0.053228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58bbf5a4c1e234a0800000000000000
+      internalID: -6614976667939260323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_w
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 80
+        width: 45
+        height: 24
+      alignment: 9
+      pivot: {x: 0.021362305, y: 0.049651463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1b3241cfd4806e0800000000000000
+      internalID: -1871159900107460150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_h
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 69
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.8086077, y: 0.25938034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec05e7afc0731e40800000000000000
+      internalID: 5625964396693228782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_h2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 69
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.797966, y: 0.24637413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33858ab2c364e5a0800000000000000
+      internalID: -6492955074757295301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_s
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 52
+        width: 51
+        height: 19
+      alignment: 9
+      pivot: {x: 0.022605073, y: 0.916622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca34078a0d32b45b0800000000000000
+      internalID: -5383169550505196628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_a3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 51
+        width: 7
+        height: 8
+      alignment: 9
+      pivot: {x: 0.9624462, y: 0.9663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2f792a9f132e510800000000000000
+      internalID: 1576877767777579704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_a2
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 33
+        width: 17
+        height: 9
+      alignment: 9
+      pivot: {x: 0.92006445, y: 0.12630844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25fa40d5b2d2c2b0800000000000000
+      internalID: -5565654511151024851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_b
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 25
+        width: 55
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b47e05b3b861630800000000000000
+      internalID: 3897455614412409730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_a1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 17
+        width: 10
+        height: 9
+      alignment: 9
+      pivot: {x: 0.8731798, y: 0.12630802}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c0fff7cb05c5520800000000000000
+      internalID: 2692115447792209029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_l2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 8
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.93103856, y: 0.9396596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f79ea2c0788021b0800000000000000
+      internalID: -5683392711857629198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: praying_mantis_l1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2
+        width: 17
+        height: 16
+      alignment: 9
+      pivot: {x: 0.98148257, y: 0.97878134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1c5126c3e160460800000000000000
+      internalID: 7207481498345521652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

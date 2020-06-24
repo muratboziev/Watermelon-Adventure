@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: cricket_AOC
+  m_Controller: {fileID: 9100000, guid: 21dfb879faeedc446b0997b06d665311, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 4f17b1d9b3a3d534c935e3fe0adfe87b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 39bae780523979143882de49ebb96ca4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fb1448fdb0316544097462a6cf815b7c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 52532070c60980c42b9a49477880f938, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a3f189764f25ffb4290db857c154dc73, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ad2158f7e9bdb3e43b30b0306c9e6fef, type: 2}

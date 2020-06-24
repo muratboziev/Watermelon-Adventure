@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: b90de4c28c64ef14b8c5848081846633
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1836476145772621492
+    second: rose_sawfly_w
+  - first:
+      213: -1302612516780385189
+    second: rose_sawfly_h
+  - first:
+      213: 6081274128190222536
+    second: rose_sawfly_b
+  - first:
+      213: 8016121664718613831
+    second: rose_sawfly_j
+  - first:
+      213: 1534368724608005956
+    second: rose_sawfly_a
+  - first:
+      213: 6381300867305067379
+    second: rose_sawfly_l1
+  - first:
+      213: 7778100832136324242
+    second: rose_sawfly_l2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rose_sawfly_w
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 54
+        width: 39
+        height: 19
+      alignment: 9
+      pivot: {x: 0.03439029, y: 0.4951489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be614313597c7910800000000000000
+      internalID: 1836476145772621492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_sawfly_h
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 37
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0.6843532, y: 0.48771006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cd35941d03cede0800000000000000
+      internalID: -1302612516780385189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_sawfly_b
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 29
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c03d808996056450800000000000000
+      internalID: 6081274128190222536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_sawfly_j
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 23
+        width: 6
+        height: 7
+      alignment: 9
+      pivot: {x: 0.96256286, y: 0.85602516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74dadddce2cfe3f60800000000000000
+      internalID: 8016121664718613831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_sawfly_a
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 22
+        width: 15
+        height: 7
+      alignment: 9
+      pivot: {x: 0.95473784, y: 0.078622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447bab0c93c2b4510800000000000000
+      internalID: 1534368724608005956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_sawfly_l1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 8
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0.9130411, y: 0.9130411}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3735c98445fee8850800000000000000
+      internalID: 6381300867305067379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_sawfly_l2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 6
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.13490081, y: 0.93148005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294e7a62f7d51fb60800000000000000
+      internalID: 7778100832136324242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

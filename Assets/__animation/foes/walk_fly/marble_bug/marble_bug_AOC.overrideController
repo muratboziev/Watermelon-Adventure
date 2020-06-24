@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: marble_bug_AOC
+  m_Controller: {fileID: 9100000, guid: 21dfb879faeedc446b0997b06d665311, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 4f17b1d9b3a3d534c935e3fe0adfe87b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: dc0a85a8959a4ec41ac3b206577c1bf3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fb1448fdb0316544097462a6cf815b7c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 59150626f4965d3478384f2dc0d27f24, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a3f189764f25ffb4290db857c154dc73, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5d478f20f322569439217b359456e3f3, type: 2}

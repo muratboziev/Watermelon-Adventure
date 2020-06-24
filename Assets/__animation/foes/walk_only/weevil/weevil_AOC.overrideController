@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: weevil_AOC
+  m_Controller: {fileID: 9100000, guid: 21dfb879faeedc446b0997b06d665311, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: fb1448fdb0316544097462a6cf815b7c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e85396fc9456a434ab0fdc9f36228ed0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a3f189764f25ffb4290db857c154dc73, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b80fb94c3b3edfb439d6c2095106abdf, type: 2}

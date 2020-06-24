@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mosquito_AOC
+  m_Controller: {fileID: 9100000, guid: 21dfb879faeedc446b0997b06d665311, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 4f17b1d9b3a3d534c935e3fe0adfe87b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 66b03c78ba9e1124ea6d011ed6f9c7e0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fb1448fdb0316544097462a6cf815b7c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b9e562a89368aa54aad6db024a8b8643, type: 2}

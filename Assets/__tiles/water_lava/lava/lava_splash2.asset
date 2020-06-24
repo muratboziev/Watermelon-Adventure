@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d4659adcf9ea54a941d0832e552b43, type: 3}
+  m_Name: lava_splash2
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: e41d6cccc656657459f2eb2ea453733c, type: 3}
+  - {fileID: 21300002, guid: e41d6cccc656657459f2eb2ea453733c, type: 3}
+  - {fileID: 21300004, guid: e41d6cccc656657459f2eb2ea453733c, type: 3}
+  - {fileID: 21300006, guid: e41d6cccc656657459f2eb2ea453733c, type: 3}
+  - {fileID: 21300008, guid: e41d6cccc656657459f2eb2ea453733c, type: 3}
+  - {fileID: 21300010, guid: e41d6cccc656657459f2eb2ea453733c, type: 3}
+  - {fileID: 21300012, guid: e41d6cccc656657459f2eb2ea453733c, type: 3}
+  - {fileID: 21300014, guid: e41d6cccc656657459f2eb2ea453733c, type: 3}
+  m_MinSpeed: 8
+  m_MaxSpeed: 8
+  m_AnimationStartTime: 0

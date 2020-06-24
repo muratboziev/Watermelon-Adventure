@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87d6e1e9fbcae944a133065598c5035, type: 3}
+  m_Name: dirt_dungeon
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Transform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_InstancedGameObject: {fileID: 0}
+  m_Flags: 1
+  m_ColliderType: 1
+  m_Sprites:
+  - {fileID: -8823449866825469600, guid: 2742940bb1fa2bb4ea3b15e3f5999a3e, type: 3}
+  - {fileID: 4688874465464423074, guid: 2742940bb1fa2bb4ea3b15e3f5999a3e, type: 3}
+  - {fileID: 3974972508738357228, guid: 2742940bb1fa2bb4ea3b15e3f5999a3e, type: 3}
+  - {fileID: 9184631941955190138, guid: 2742940bb1fa2bb4ea3b15e3f5999a3e, type: 3}
+  - {fileID: -1802129588027358484, guid: 2742940bb1fa2bb4ea3b15e3f5999a3e, type: 3}
+  - {fileID: -5837811616839433341, guid: 2742940bb1fa2bb4ea3b15e3f5999a3e, type: 3}
