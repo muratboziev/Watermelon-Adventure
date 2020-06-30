@@ -120,7 +120,7 @@ public class Weapon
             {
                 attack_success = true;
             }
-            else if (melee_weapons.Contains(roll_weapon))
+            else if (roll_weapon.Contains(weapon_name))
             {
                 attack_success = true;
             }

@@ -165,13 +165,13 @@ public class MenuManager : MonoBehaviour
             if (cur_menu_state.name.Equals("gameplay"))
             {
                 Time.timeScale = 0f;
-                game_man.bg_scroll_cont.active = false;
+                game_man.bg_scroll_cont.deactivate_bg_scroll(deact_go:false);
                 game_man.pause_audiosources();
             }
             else if (cur_menu_state.name.Equals("pause"))
             {                
                 Time.timeScale = 1f;
-                game_man.bg_scroll_cont.active = true;
+                game_man.bg_scroll_cont.activate_bg_scroll();
                 game_man.unpause_audiosources();
             }
 
@@ -220,7 +220,7 @@ public class MenuManager : MonoBehaviour
             if (par != 2)                                      //if not to options panel or main menu
             {
                 Time.timeScale = 1;
-                game_man.bg_scroll_cont.active = true;
+                game_man.bg_scroll_cont.bg_scroll_is_active = true;
             }
 
             if (par == 1)                                                   //1 = restart

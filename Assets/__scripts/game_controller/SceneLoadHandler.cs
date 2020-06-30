@@ -446,7 +446,8 @@ public class SceneLoadHandler : MonoBehaviour
             object_to_link.weap_man.take_away_weapons();            
             object_to_link.gameplay_gui_man.level_loaded();
             object_to_link.gui_man_hp_score.update_player_hp_sprite(object_to_link.hero_cont.recalc_hero_params.cur_hero_hp);
-            object_to_link.bg_scroll_cont.activate_bg();
+            object_to_link.bg_scroll_cont.initialize_bg_scroll();
+            object_to_link.bg_scroll_cont.activate_bg_scroll(); 
             object_to_link.game_man.player_points.drop_cur_points();
             object_to_link.gui_man_hp_score.update_player_score(level_start:true);
             object_to_link.pickable_manager.instantiate_dna_parts();
@@ -459,7 +460,7 @@ public class SceneLoadHandler : MonoBehaviour
         }
         else
         {
-            object_to_link.bg_scroll_cont.deactivate_bg();
+            object_to_link.bg_scroll_cont.deactivate_bg_scroll(deact_go:true);
         }
 
     }

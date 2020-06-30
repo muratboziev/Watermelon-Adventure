@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour
         cinemach_camera.Follow = null;
         cinemach_camera.LookAt = null;
 
-        bg_scroll_cont.deactivate_bg(deact_go: false);
+        bg_scroll_cont.deactivate_bg_scroll(deact_go: false);
 
         //-----------------
         

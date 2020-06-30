@@ -12553,7 +12553,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: c0f84b3f851d6264db6c5cad06b0445c, type: 3}
     pickup_sound: {fileID: 8300000, guid: 95e72f6e7282e114c801c6eb460169f4, type: 3}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 3
     animation_state: 7
@@ -12596,7 +12596,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: 8badff845dfdb7d49b8e303279915c33, type: 3}
     pickup_sound: {fileID: 8300000, guid: 3d6633b4a9b0e5046a67a95f9850f9fe, type: 3}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 4
     animation_state: 8
@@ -12639,7 +12639,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: 2b40adc7ad5a63e4e8cd726d2ce876ac, type: 3}
     pickup_sound: {fileID: 8300000, guid: 492758a9c32d02540a36a28fc848cf3a, type: 3}
     attack_sound_delay: 1
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 5
     animation_state: 9
@@ -12682,7 +12682,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: 2a9c1e186b299be40a01c0a1687fe9da, type: 3}
     pickup_sound: {fileID: 8300000, guid: 6e94e13339f5aea4e9ba1d6341ad6675, type: 3}
     attack_sound_delay: 1
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 6
     animation_state: 10
@@ -12725,7 +12725,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: 958e9e927cf05b347b6743a89b4fb339, type: 3}
     pickup_sound: {fileID: 8300000, guid: f71c3b22cb05df645b1a0ad2a891c610, type: 3}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 7
     animation_state: 11
@@ -12768,7 +12768,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: cff07bb68da6754489f98f001066651e, type: 3}
     pickup_sound: {fileID: 8300000, guid: 8657532d527439944963780244d0c6c2, type: 3}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 8
     animation_state: 12
@@ -12811,7 +12811,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: 7a6ad249d6725364ba29f36b858e0c40, type: 3}
     pickup_sound: {fileID: 8300000, guid: 12eb5a299d629c040b80548d066e55e1, type: 3}
     attack_sound_delay: 0.08
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 10
     animation_state: 13
@@ -12854,7 +12854,7 @@ MonoBehaviour:
     attack_sound: {fileID: 0}
     pickup_sound: {fileID: 0}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 0
     animation_state: 0
@@ -12897,7 +12897,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: 61d9731eab91cb540b52325d5f6078ba, type: 3}
     pickup_sound: {fileID: 0}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 0
     anim_layer_index: 2
     animation_state: 4
@@ -12940,7 +12940,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: ceac1e50a582d094185ee6252838ec83, type: 3}
     pickup_sound: {fileID: 8300000, guid: 43882232fc4524e45a956775260ef12c, type: 3}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 1
     anim_layer_index: 11
     animation_state: 15
@@ -12983,7 +12983,7 @@ MonoBehaviour:
     attack_sound: {fileID: 8300000, guid: a9b9518ac0f92584e94276613e4ee414, type: 3}
     pickup_sound: {fileID: 8300000, guid: 43882232fc4524e45a956775260ef12c, type: 3}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 1
     anim_layer_index: 11
     animation_state: 15
@@ -13026,7 +13026,7 @@ MonoBehaviour:
     attack_sound: {fileID: 0}
     pickup_sound: {fileID: 8300000, guid: 43882232fc4524e45a956775260ef12c, type: 3}
     attack_sound_delay: 0
-    sound_off_after_attack: 0
+    turn_sound_off_after_attack: 0
     use_2nd_audiosource: 1
     anim_layer_index: 11
     animation_state: 15
@@ -15691,99 +15691,71 @@ MonoBehaviour:
       object2: {fileID: 5195157526674568541}
       hor_speed_koef: 0.05
       hor_is_const_scroll: 0
-      hor_speed: 0
+      vert_immutable: 0
       vert_initial_offset: -0.5
-      vert_initial_offset_abs_value: 0
       vert_paralax_delta: 0.1
       vert_has_paralax: 1
-      vert_speed: 0
-      width: 0
-      height: 0
     - name: grass middle
       object1: {fileID: 209907524}
       object2: {fileID: 8690156938959577857}
       hor_speed_koef: 0.025
       hor_is_const_scroll: 0
-      hor_speed: 0
+      vert_immutable: 0
       vert_initial_offset: -0.45
-      vert_initial_offset_abs_value: 0
       vert_paralax_delta: 0.15
       vert_has_paralax: 1
-      vert_speed: 0
-      width: 0
-      height: 0
     - name: grass far
       object1: {fileID: 236261289}
       object2: {fileID: 1530009969396507261}
       hor_speed_koef: 0.012
       hor_is_const_scroll: 0
-      hor_speed: 0
+      vert_immutable: 0
       vert_initial_offset: -0.4
-      vert_initial_offset_abs_value: 0
       vert_paralax_delta: 0.2
       vert_has_paralax: 1
-      vert_speed: 0
-      width: 0
-      height: 0
     - name: mountains
       object1: {fileID: 882942276}
       object2: {fileID: 7909210971333348083}
       hor_speed_koef: 0.01
       hor_is_const_scroll: 0
-      hor_speed: 0
+      vert_immutable: 0
       vert_initial_offset: -0.15
-      vert_initial_offset_abs_value: 0
       vert_paralax_delta: 0.2
       vert_has_paralax: 1
-      vert_speed: 0
-      width: 0
-      height: 0
     - name: sky
       object1: {fileID: 1083596866}
       object2: {fileID: 4042654655275485452}
       hor_speed_koef: 0.1
       hor_is_const_scroll: 0
-      hor_speed: 0
+      vert_immutable: 0
       vert_initial_offset: 0.1
-      vert_initial_offset_abs_value: 0
       vert_paralax_delta: 0.2
       vert_has_paralax: 1
-      vert_speed: 0
-      width: 0
-      height: 0
     - name: clouds near
       object1: {fileID: 1462064285}
       object2: {fileID: 8162441136718155512}
       hor_speed_koef: -0.012
       hor_is_const_scroll: 1
-      hor_speed: 0
+      vert_immutable: 1
       vert_initial_offset: 1
-      vert_initial_offset_abs_value: 0
       vert_paralax_delta: 0.2
       vert_has_paralax: 1
-      vert_speed: 0
-      width: 0
-      height: 0
     - name: clouds far
       object1: {fileID: 1289571588}
       object2: {fileID: 5486787941775770080}
       hor_speed_koef: -0.006
       hor_is_const_scroll: 1
-      hor_speed: 0
+      vert_immutable: 1
       vert_initial_offset: 0.8
-      vert_initial_offset_abs_value: 0
       vert_paralax_delta: 0.2
       vert_has_paralax: 1
-      vert_speed: 0
-      width: 0
-      height: 0
   - name: act2
     go: {fileID: 9129112125193447541}
     obj_to_scroll: []
   - name: act3
     go: {fileID: 9129112125193447541}
     obj_to_scroll: []
-  active: 0
+  bg_scroll_is_active: 0
 --- !u!1 &1560354320
 GameObject:
   m_ObjectHideFlags: 0
