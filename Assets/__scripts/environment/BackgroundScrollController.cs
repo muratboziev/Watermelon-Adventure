@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 [System.Serializable]
 public class BgScrollObjectPair
@@ -13,31 +14,52 @@ public class BgScrollObjectPair
     public float hor_speed_koef;                    //speed koeficient of objects to scroll        
     public bool hor_is_const_scroll = false;        //is object requires to be scrolled constantly (clouds)  
 
-    public bool vert_immutable;
-    public float vert_initial_offset;    
-    public float vert_paralax_delta;    
-    public bool vert_has_paralax = true;            //does object has vertical paralax (not used in script)  
-
-    private float hor_speed, vert_speed;
+    public bool vert_has_paralax = true;            //does bg has vertical paralax and follows hero with delay (hills, mountains)
+    public bool vert_const_offset = false;            //does bg is always on same position relative to hero (sky)  (if none is true no change of position when player moves vertically will happen (clouds))
+    public float vert_relative_offset_from_player;    
+    public float vert_paralax;
+    
     private float go_width;
 
-    private float cur_delta_x, cur_delta_y;
-    private Vector2 new_pos = new Vector2();
+    private float cur_delta_x, cur_delta_y;        
+    private float abs_offset_ver;              //абсолютное значение расстояние на которое центр фона должен отстоять от ГГ
+    private Vector2 new_pos = new Vector2(), new_pos2 = new Vector2();
+    private float vert_total_delta = 0;
+    
 
-
-    public void move_bg_object(Rigidbody2D hero_rb2d, float hor_replace_dist)
+    public void move_bg_object_hor(Rigidbody2D hero_rb2d, float hor_replace_dist)
     {
         new_pos = object1.transform.position;
-        new_pos.x += pos_X_delta(hero_rb2d.velocity.x);
-        object1.transform.position = new_pos;
+        new_pos2 = object2.transform.position;
 
-        new_pos = object2.transform.position;
         new_pos.x += pos_X_delta(hero_rb2d.velocity.x);
-        object2.transform.position = new_pos;
+        new_pos2.x += pos_X_delta(hero_rb2d.velocity.x);
+
+        object1.transform.position = new_pos;
+        object2.transform.position = new_pos2;
 
         make_pair_bg_offset(object1.transform, object2.transform, hero_rb2d.velocity.x, hero_rb2d.gameObject.transform.position.x, hor_replace_dist);        
+    }
 
-        //new_pos.y += pos_Y_delta(hero_rb2d.velocity.y, hero_rb2d.gameObject.transform.position.y);
+    public void move_bg_object_ver(Rigidbody2D hero_rb2d)
+    {
+        new_pos = object1.transform.position;       //clouds
+        new_pos2 = object2.transform.position;
+
+        if (vert_has_paralax)                       //hills moutains
+        {
+            new_pos.y = pos_Y_delta(hero_rb2d.velocity.y, hero_rb2d.gameObject.transform.position.y, new_pos.y);
+            new_pos2.y = pos_Y_delta(hero_rb2d.velocity.y, hero_rb2d.gameObject.transform.position.y, new_pos2.y);
+            
+        }
+        else if (vert_const_offset)                 //sky
+        {
+            new_pos.y = hero_rb2d.transform.position.y + abs_offset_ver;
+            new_pos2.y = hero_rb2d.transform.position.y + abs_offset_ver;
+        }
+
+        object1.transform.position = new_pos;
+        object2.transform.position = new_pos2;
     }
 
     public float pos_X_delta(float hero_X_speed)
@@ -46,29 +68,32 @@ public class BgScrollObjectPair
 
         if (hor_is_const_scroll)
         {
-            cur_delta_x = hor_speed;
+            cur_delta_x = hor_speed_koef;
         }
         else if (hero_X_speed != 0f)
         {
-            cur_delta_x = hor_speed * Mathf.Sign(hero_X_speed) * -1;
+            cur_delta_x = hor_speed_koef * Mathf.Sign(hero_X_speed) * -1;
         }
 
         return cur_delta_x;
     }
 
-    public float pos_Y_delta(float hero_Y_speed, float hero_Y_pos)
+    public float pos_Y_delta(float hero_Y_speed, float hero_y_pos, float bg_y_pos)
     {
-        if (vert_has_paralax && hero_Y_speed != 0f)
+
+        cur_delta_y = hero_Y_speed * vert_paralax / 100;
+        //cur_delta_y = hero_Y_pos + relative_position_y + hero_Y_speed * vert_speed / 10;        
+
+        vert_total_delta += cur_delta_y;
+                
+
+        if (Mathf.Abs(vert_total_delta) > 100)
         {
-            cur_delta_y = hero_Y_speed * vert_speed / 100;
-
-            //if (name.Contains("grass near"))
-                //Debug.Log(name + " " + hero_Y_speed / 1000);
-
-            return cur_delta_y;
+            //cur_delta_y = Mathf.Sign(hero_Y_speed) * (Mathf.Abs(vert_total_delta) - 100);
+            return hero_y_pos + abs_offset_ver + 100 * Mathf.Sign(hero_Y_speed) * -1 ;
         }
-
-        return 0;        
+        
+        return bg_y_pos + cur_delta_y;
     }
 
     public void make_pair_bg_offset(Transform bg_1, Transform bg_2, float hero_velocity, float hero_pos_x, float hor_replace_dist)
@@ -104,8 +129,8 @@ public class BgScrollObjectPair
                     (hor_is_const_scroll && hero_velocity >= 0 && hero_pos_x > far_bg.position.x))               //constant scrolling (always from right to left) and hero goes right (or stood) and far bg is on left
                 {
                     new_pos = near_bg.position;
-                    if (name == "clouds near")
-                        Debug.Log("right " + new_pos.x + " " + (new_pos.x + go_width) + " vel= " + hero_velocity);
+                    //if (name == "clouds near")
+                    //    Debug.Log("right " + new_pos.x + " " + (new_pos.x + go_width) + " vel= " + hero_velocity);
                     new_pos.x += go_width;
                     far_bg.position = new_pos;
                 }
@@ -114,9 +139,7 @@ public class BgScrollObjectPair
                     (hor_is_const_scroll && hero_velocity < 0 && hero_pos_x < far_bg.position.x))                    //constant scrolling (always from right to left) and hero goes left (or stood) and far bg is on right                       
 
                 {
-                    new_pos = near_bg.position;
-                    if (name == "clouds near")
-                        Debug.Log("left " + new_pos.x + " " + (new_pos.x - go_width) + " vel= " + hero_velocity);
+                    new_pos = near_bg.position;                    
                     new_pos.x -= go_width;
                     far_bg.position = new_pos;
                 }          
@@ -130,24 +153,20 @@ public class BgScrollObjectPair
     {
         float width, height;                //width of the GO's to scroll from its collide 
 
-        if (name == "clouds near")
-        {
-            Debug.Log(1);
-        }
-
         width = object1.GetComponent<BoxCollider2D>().size.x;
         height = object1.GetComponent<BoxCollider2D>().size.y;
         go_width = width;
 
-        hor_speed = global_hor_scroll_speed * hor_speed_koef;
-        vert_speed = vert_paralax_delta;// * global_hor_scroll_speed / obj_to_scroll[i].width;            
+        hor_speed_koef *= global_hor_scroll_speed;
+        
+        abs_offset_ver = vert_relative_offset_from_player * height;
 
         new_pos.x = hero_pos.x;
-        new_pos.y = hero_pos.y + vert_initial_offset * height;
+        new_pos.y = hero_pos.y + abs_offset_ver;
         object1.transform.position = new_pos;
 
         new_pos.x = hero_pos.x + width;
-        new_pos.y = hero_pos.y + vert_initial_offset * height;
+        new_pos.y = hero_pos.y + abs_offset_ver;
         object2.transform.position = new_pos;
     }
 }
@@ -176,33 +195,59 @@ public class BackgroundScrollController : MonoBehaviour
     [HideInInspector]
     public bool bg_scroll_is_active = false;
 
-    private BgScrollObjectPair[] obj_to_scroll;    
-    int scroll_obj_length;                    
-    
-
-    public void initialize_bg_scroll()
-    {
-        backgrounds[menu_man.cur_act - 1].go.SetActive(true);
-
-        obj_to_scroll = backgrounds[menu_man.cur_act - 1].obj_to_scroll;
-        scroll_obj_length = obj_to_scroll.Length;        
-
-        for (int i = 0; i < scroll_obj_length; i++)                          //initializing and placing
-        {
-            obj_to_scroll[i].initial_go_placing(hero_rb2d.gameObject.transform.position, global_hor_scroll_speed);
-        }        
-    }
+    List<BgScrollObjectPair> hor_bg_const_scroll = new List<BgScrollObjectPair>();
+    List<BgScrollObjectPair> hor_bg = new List<BgScrollObjectPair>();
 
     void Update()
     {
         if (bg_scroll_is_active)
         {
-            for (int i = 0; i < scroll_obj_length; i++)
+            foreach (BgScrollObjectPair bg in hor_bg_const_scroll)
             {
-                obj_to_scroll[i].move_bg_object(hero_rb2d, global_hor_replace_dist);
+                bg.move_bg_object_hor(hero_rb2d, global_hor_replace_dist);
+            }
+
+            if (hero_rb2d.velocity.x != 0)                                      //если герой движется, передвигаем сразу все фоны 
+            {
+                foreach (BgScrollObjectPair bg in hor_bg)
+                {
+                    bg.move_bg_object_hor(hero_rb2d, global_hor_replace_dist);
+
+                }
+            }
+
+            if (hero_rb2d.velocity.y != 0)
+            {
+                foreach (BgScrollObjectPair bg in hor_bg)
+                {
+                    bg.move_bg_object_ver(hero_rb2d);
+                }
+
+                foreach (BgScrollObjectPair bg in hor_bg_const_scroll)
+                {
+                    bg.move_bg_object_ver(hero_rb2d);
+                }
             }
         }
     }
+
+    public void initialize_bg_scroll()
+    {   
+        int cur_act = menu_man.cur_act - 1;
+
+        backgrounds[cur_act].go.SetActive(true);
+
+        foreach (BgScrollObjectPair bg in backgrounds[cur_act].obj_to_scroll)                          //initializing and placing
+        {            
+            bg.initial_go_placing(hero_rb2d.gameObject.transform.position, global_hor_scroll_speed);
+
+            if (bg.hor_is_const_scroll)
+                hor_bg_const_scroll.Add(bg);
+            else
+                hor_bg.Add(bg);
+        }
+    }
+
 
     public void activate_bg_scroll()
     {
@@ -217,6 +262,6 @@ public class BackgroundScrollController : MonoBehaviour
                 bg.go.SetActive(false);
     }
 
-  
+
 
 }
