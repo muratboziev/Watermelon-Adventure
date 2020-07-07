@@ -484,9 +484,11 @@ public class MenuManager : MonoBehaviour
     public IEnumerator menu_transition(MenuTransition mt, string scene_name="")
     {
         Menu_State state_from = mt.state_from;
-        Menu_State state_to = mt.state_to;
-        bool with_fading = mt.with_fading;
+        Menu_State state_to = mt.state_to;        
         bool with_scene_loading = mt.with_scene_loading;
+
+        bool with_fading = mt.with_fading;
+        bool with_scene_loading_panel = false;
 
         WaitForSeconds loadTime = new WaitForSeconds(1.2f);   //1
 
@@ -497,7 +499,7 @@ public class MenuManager : MonoBehaviour
         uiPanel.clickBlocker.gameobj.SetActive(true);
 
         //-------------------------------------------------
-        with_fading = false;
+        //with_fading = false;
 
         if (state_to.name == "buy_evo" || state_from.name == "buy_evo")
         {
@@ -529,7 +531,12 @@ public class MenuManager : MonoBehaviour
 
         if (with_scene_loading)
         {
+            
             elapsedTime = 0;
+
+            if (!with_scene_loading_panel)
+                elapsedTime = 3;
+
             uiPanel.loadingPanel.gameobj.SetActive(true);
             
             while (elapsedTime < fade_duration)

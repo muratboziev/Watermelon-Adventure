@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 //123
 public class GameManager : MonoBehaviour
 {
+    public bool load_main;
+    public string scene_to_load = "act1_level1";
     [Header("Links")]
     public GameProgressSaver game_progr;
     public HeroController hero_contr;

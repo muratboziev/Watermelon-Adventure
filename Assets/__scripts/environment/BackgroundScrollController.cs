@@ -25,6 +25,8 @@ public class BgScrollObjectPair
     private float abs_offset_ver;              //абсолютное значение расстояние на которое центр фона должен отстоять от ГГ
     private Vector2 new_pos = new Vector2(), new_pos2 = new Vector2();
     private float vert_total_delta = 0;
+    private float exceed_delta = 0;
+    private bool vert_offset_exceeded = false;
     
 
     public void move_bg_object_hor(Rigidbody2D hero_rb2d, float hor_replace_dist)
@@ -81,18 +83,24 @@ public class BgScrollObjectPair
     public float pos_Y_delta(float hero_Y_speed, float hero_y_pos, float bg_y_pos)
     {
 
-        cur_delta_y = hero_Y_speed * vert_paralax / 100;
-        //cur_delta_y = hero_Y_pos + relative_position_y + hero_Y_speed * vert_speed / 10;        
+        cur_delta_y = hero_Y_speed * vert_paralax / 100;        
 
         vert_total_delta += cur_delta_y;
                 
 
-        if (Mathf.Abs(vert_total_delta) > 100)
+        if (Mathf.Abs(vert_total_delta) > 50)
         {
-            //cur_delta_y = Mathf.Sign(hero_Y_speed) * (Mathf.Abs(vert_total_delta) - 100);
-            return hero_y_pos + abs_offset_ver + 100 * Mathf.Sign(hero_Y_speed) * -1 ;
+            if (!vert_offset_exceeded)
+            {
+                vert_offset_exceeded = true;
+                exceed_delta = hero_y_pos - bg_y_pos;
+                return bg_y_pos;
+            }
+
+            return hero_y_pos - exceed_delta;
         }
-        
+
+        vert_offset_exceeded = false;
         return bg_y_pos + cur_delta_y;
     }
 

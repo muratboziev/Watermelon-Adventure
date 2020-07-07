@@ -59,7 +59,6 @@ public class SceneLoadHandler : MonoBehaviour
         SceneManager.sceneLoaded += run_enemies;
 
         SceneManager.sceneLoaded += scene_load_completed;
-        
     }
 
     public static void scene_unload_started(Scene scene)
@@ -70,6 +69,22 @@ public class SceneLoadHandler : MonoBehaviour
     public static void scene_load_completed(Scene scene, LoadSceneMode mode)
     {        
         scene_load_complete = true;
+
+        if (object_to_link.game_man.load_main != true && scene.name == "start_menu")
+        {
+            string sc_to_load = object_to_link.game_man.scene_to_load;
+            int act = (int)char.GetNumericValue(sc_to_load[3]); 
+            int level = (int)char.GetNumericValue(sc_to_load[10]);
+
+            object_to_link.game_man.playable_character = "watermelon";
+
+            object_to_link.menu_man.cur_act = act;
+            object_to_link.menu_man.cur_level = level;
+            object_to_link.menu_man.cur_menu_state = object_to_link.menu_man.make_transition(object_to_link.menu_man.cur_menu_state.transition[0]);
+            object_to_link.menu_man.cur_menu_state = object_to_link.menu_man.make_transition(object_to_link.menu_man.cur_menu_state.transition[1]);
+            object_to_link.menu_man.cur_menu_state = object_to_link.menu_man.make_transition(object_to_link.menu_man.cur_menu_state.transition[act]);
+            object_to_link.menu_man.cur_menu_state = object_to_link.menu_man.make_transition(object_to_link.menu_man.cur_menu_state.transition[1], sc_to_load);
+        }
     }
 
     public static void instantiate_hero_and_allies(Scene scene, LoadSceneMode mode)
@@ -110,7 +125,7 @@ public class SceneLoadHandler : MonoBehaviour
     }
 
     public static void establish_links(Scene scene, LoadSceneMode mode)
-    {
+    {        
         object_to_link.game_man = FindObjectOfType<GameManager>() as GameManager;
         object_to_link.menu_man = FindObjectOfType<MenuManager>() as MenuManager;
         object_to_link.event_sys = FindObjectOfType<EventSystem>() as EventSystem;
@@ -308,7 +323,7 @@ public class SceneLoadHandler : MonoBehaviour
             object_to_link.game_man.menu_man = object_to_link.menu_man;
             object_to_link.game_man.evo_pan_man = object_to_link.evo_pan_man;
             object_to_link.menu_man.game_man = object_to_link.game_man;
-            object_to_link.game_man.audio_man = object_to_link.audio_man;
+            object_to_link.game_man.audio_man = object_to_link.audio_man;            
         }
     }
 
