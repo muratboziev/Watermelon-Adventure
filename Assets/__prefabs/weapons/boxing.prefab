@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5179336161455261056
 Transform:
   m_ObjectHideFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 5184487671996529768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.2, y: -5.9, z: -0.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_Children: []
   m_Father: {fileID: 5179407813196906824}
   m_RootOrder: 1
@@ -45,6 +45,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -69,7 +70,8 @@ SpriteRenderer:
   m_SortingLayerID: -1218586079
   m_SortingLayer: 7
   m_SortingOrder: 8
-  m_Sprite: {fileID: 21300002, guid: b50b98c17ab045d4fb457b96bf71713b, type: 3}
+  m_Sprite: {fileID: 3242849448262914307, guid: b50b98c17ab045d4fb457b96bf71713b,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,7 +140,7 @@ Transform:
   m_GameObject: {fileID: 5185147920302135260}
   m_LocalRotation: {x: -0, y: -0, z: -0.0000000023283062, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 4.75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_Children: []
   m_Father: {fileID: 5179407813196906824}
   m_RootOrder: 0
@@ -157,6 +159,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -181,7 +184,8 @@ SpriteRenderer:
   m_SortingLayerID: -1218586079
   m_SortingLayer: 7
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: b50b98c17ab045d4fb457b96bf71713b, type: 3}
+  m_Sprite: {fileID: -9068732801947649175, guid: b50b98c17ab045d4fb457b96bf71713b,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -238,8 +242,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.538368, y: -0.7659537}
-  m_Size: {x: 35.491337, y: 23.029163}
+  m_Offset: {x: 0.29981515, y: -0.43990716}
+  m_Size: {x: 30.454844, y: 28.16005}
   m_Direction: 1
 --- !u!111 &5078979467859847950
 Animation:

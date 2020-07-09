@@ -306,6 +306,9 @@ AnimatorController:
     - serializedVersion: 2
       m_State: {fileID: 1102690346157498916}
       m_Motion: {fileID: 7400000, guid: 68819c7bf621f72449d2266c7f4c521f, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: 1102952194727930564}
+      m_Motion: {fileID: 7400000, guid: 4e3dfa865be2f284faa07d3d82827182, type: 2}
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: 2
@@ -1663,7 +1666,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
+  - m_ConditionMode: 7
     m_ConditionEvent: state_arms
     m_EventTreshold: 14
   m_DstStateMachine: {fileID: 0}

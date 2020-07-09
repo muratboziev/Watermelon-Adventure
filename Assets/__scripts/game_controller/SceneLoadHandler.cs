@@ -188,7 +188,7 @@ public class SceneLoadHandler : MonoBehaviour
             object_to_link.game_man.pickable_object_spawn_manager = object_to_link.pickable_manager;            
 
             object_to_link.bg_scroll_cont.menu_man = object_to_link.menu_man;
-            object_to_link.bg_scroll_cont.hero_rb2d = object_to_link.hero_cont.rb2d;
+            object_to_link.bg_scroll_cont.hero_rb2d = object_to_link.hero_cont.rb2d;            
 
             //линкуем насекомых-союзников
 

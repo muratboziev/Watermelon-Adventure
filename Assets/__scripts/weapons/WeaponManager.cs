@@ -56,7 +56,7 @@ public class Weapon
     private bool can_emit, attack_success;    
 
     private static string gauss_gun_str = "gauss_gun";
-    private static string melee_weapons = "katana shoe";
+    private static string melee_weapons = "katana shoe boxing";
     private static string weapons_with_ps = "insecticide flamethrower shotgun minigun";
     private static string insect_weapons = "ally_spider ally_dragonfly ally_praying_mantis";
     private static string roll_weapon = "roll";
@@ -107,17 +107,17 @@ public class Weapon
                     attack_success = true;
                 }
             }
-            else if (gauss_gun_str.Contains(weapon_name))
-            {                
-                gauss_gun.attack();
+            else if (melee_weapons.Contains(weapon_name))
+            {
                 attack_success = true;
             }
             else if (insect_weapons.Contains(weapon_name))
             {
-                attack_success = ally_insect.start_attack();                
-            }
-            else if (melee_weapons.Contains(weapon_name))
-            {
+                attack_success = ally_insect.start_attack();
+            }            
+            else if (gauss_gun_str.Contains(weapon_name))
+            {                
+                gauss_gun.attack();
                 attack_success = true;
             }
             else if (roll_weapon.Contains(weapon_name))

@@ -3,11 +3,11 @@ guid: b50b98c17ab045d4fb457b96bf71713b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: boxing_0
+      213: -9068732801947649175
+    second: boxing_helmet
   - first:
-      213: 21300002
-    second: boxing_1
+      213: 3242849448262914307
+    second: boxing_glove
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +53,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -63,7 +63,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -90,18 +90,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 128
     resizeAlgorithm: 0
@@ -117,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boxing_0
+      name: boxing_helmet
       rect:
         serializedVersion: 2
         x: 8
@@ -131,18 +119,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a976b2db42be4ba408594c86576281d7
-      internalID: 21300000
+      spriteID: 96b3af89093652280800000000000000
+      internalID: -9068732801947649175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boxing_1
+      name: boxing_glove
       rect:
         serializedVersion: 2
-        x: 36
-        y: 40
+        x: 30
+        y: 33
         width: 17
         height: 12
       alignment: 0
@@ -152,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3192abdc5013dda44affeba06d79991d
-      internalID: 21300002
+      spriteID: 30158cf446ae00d20800000000000000
+      internalID: 3242849448262914307
       vertices: []
       indices: 
       edges: []
@@ -161,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e494d80f8f499f74eb74fae7310df22c
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

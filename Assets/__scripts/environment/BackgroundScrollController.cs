@@ -88,7 +88,7 @@ public class BgScrollObjectPair
         vert_total_delta += cur_delta_y;
                 
 
-        if (Mathf.Abs(vert_total_delta) > 50)
+        if (Mathf.Abs(vert_total_delta) > Mathf.Abs(abs_offset_ver) + 30)
         {
             if (!vert_offset_exceeded)
             {
@@ -97,7 +97,7 @@ public class BgScrollObjectPair
                 return bg_y_pos;
             }
 
-            return hero_y_pos - exceed_delta;
+            return bg_y_pos;// hero_y_pos - exceed_delta;
         }
 
         vert_offset_exceeded = false;

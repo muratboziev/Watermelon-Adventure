@@ -89,9 +89,10 @@ public class HeroController : MonoBehaviour
     public bool block_user_control = false;
     private bool invincible = false;
     private float wait_for_roll_start_time = 0.1f;
+    private float time_to_trigger_attack_anim;
 
     //-------------------------------------------------------    
-    
+
     Animator anim;    
     Vector2 velocity_limit = new Vector2();
     Impact impact_val = new Impact(0f, 0f, 0f);
@@ -101,7 +102,7 @@ public class HeroController : MonoBehaviour
 
     float move_hor, prev_speed;
     bool grounded = true, grounded_prev = false, sided = false;
-    bool jump_pressed = false, attack_pressed = false, attack_released = false;
+    bool jump_pressed = false, attack_pressed = false, attack_released = true;
     bool can_attack = false, attack_done = false, is_reloaded = false, roll_condition = false, weap_switched = true;
 
     int legs_anim_state, arms_anim_state, prev_legs_anim_state, prev_arms_anim_state;
@@ -155,17 +156,18 @@ public class HeroController : MonoBehaviour
         if (Input.GetButtonDown(attack_string))
         {
             attack_pressed = true;
+            attack_released = false;
         }
 
         if (Input.GetButtonUp(attack_string))
         {
             attack_pressed = false;
+            attack_released = true;
             weap_switched = true;
             weap_man.reload();
 
             if (weap_man.turn_sound_off_after_attack)
-            {                
-                attack_released = true;
+            {   
                 audio_source_attack.Stop();
             }
         }
@@ -195,7 +197,7 @@ public class HeroController : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
+    {        
         if (move_hor == 0)
         { 
             legs_anim_state = HeroState.IDLE;
@@ -236,14 +238,21 @@ public class HeroController : MonoBehaviour
         if (attack_pressed)                                                   //attack button pressed
         {
             //weapon considered being reloaded only when both fire button is up and attack animation stopped playing
-            is_reloaded = weap_man.reloaded && !is_animation_playing(weap_man.weapon_name);            
+            is_reloaded = weap_man.reloaded && !is_animation_playing(weap_man.weapon_name);
             roll_condition = weap_man.animation_state != HeroState.ROLL || ((weap_man.animation_state == HeroState.ROLL) && grounded);
             can_attack = (is_reloaded || !weap_man.needs_reload) && roll_condition && weap_man.weapon_switch_completed && weap_switched;
 
             if (can_attack)
-            {                                             
+            {
                 attack();
+                arms_anim_state = weap_man.animation_state;
+                time_to_trigger_attack_anim = Time.time;
             }
+        }
+        
+        if (attack_pressed && time_to_trigger_attack_anim + 0.1f > Time.time)
+        {
+            arms_anim_state = weap_man.animation_state;
         }
 
         if (move_hor > 0 && !facingRight || move_hor < 0 && facingRight)     //faces wrong direction
@@ -277,8 +286,7 @@ public class HeroController : MonoBehaviour
     //actions-------------------------------------------------------------------------------------------
 
     void attack()
-    {        
-        arms_anim_state = weap_man.animation_state;
+    {   
         impact_val = ImpactType.recoil(weap_man.impact_on_hero, facingRight);
 
         if (weap_man.animation_state == HeroState.ROLL)
@@ -291,9 +299,8 @@ public class HeroController : MonoBehaviour
         StartCoroutine(ImpactType.push(rb2d, impact_val));
         attack_done = weap_man.attack();        
 
-        if (attack_done && (Time.time > next_attack_sound_play_time || (attack_released && weap_man.turn_sound_off_after_attack)))
-        {            
-            attack_released = false;
+        if (attack_done && (Time.time > next_attack_sound_play_time))  // || (attack_released && weap_man.turn_sound_off_after_attack)))
+        {   
             if (!weap_man.use_2nd_audiosource)
             {
                 audio_source_attack.clip = weap_man.weapon_attack_sound;
@@ -565,7 +572,7 @@ public class HeroController : MonoBehaviour
     }
 
     bool is_animation_playing(string anim_name)
-    {        
+    {
         return anim.GetCurrentAnimatorStateInfo(weap_man.anim_layer_index).IsName(anim_name);
     }
 
