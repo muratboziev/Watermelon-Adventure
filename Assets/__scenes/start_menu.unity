@@ -12540,7 +12540,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 100
-      max_charges: 10
+      charges_count: 10
       charges_left: 0
       weight: 0.9
       needs_reload: 1
@@ -12567,7 +12567,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12583,7 +12583,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 50
-      max_charges: 10
+      charges_count: 10
       charges_left: 0
       weight: 0.9
       needs_reload: 1
@@ -12610,7 +12610,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12626,7 +12626,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 15
-      max_charges: 50
+      charges_count: 50
       charges_left: 0
       weight: 0.75
       needs_reload: 0
@@ -12653,7 +12653,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12669,7 +12669,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 23
-      max_charges: 50
+      charges_count: 50
       charges_left: 0
       weight: 0.7
       needs_reload: 0
@@ -12696,7 +12696,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12712,7 +12712,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 20
-      max_charges: 10
+      charges_count: 10
       charges_left: 0
       weight: 0.75
       needs_reload: 1
@@ -12739,7 +12739,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12755,7 +12755,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 50
-      max_charges: 10
+      charges_count: 10
       charges_left: 0
       weight: 0.8
       needs_reload: 1
@@ -12782,7 +12782,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12798,7 +12798,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 20
-      max_charges: 50
+      charges_count: 50
       charges_left: 0
       weight: 0.5
       needs_reload: 0
@@ -12825,7 +12825,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12841,7 +12841,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 30
-      max_charges: 10
+      charges_count: 10
       charges_left: 10
       weight: 1
       needs_reload: 1
@@ -12868,7 +12868,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12884,7 +12884,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 45
-      max_charges: 99999
+      charges_count: 0
       charges_left: 99999
       weight: 1
       needs_reload: 1
@@ -12911,7 +12911,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12927,7 +12927,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 100
-      max_charges: 1
+      charges_count: 1
       charges_left: 0
       weight: 0.9
       needs_reload: 1
@@ -12954,7 +12954,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -12970,7 +12970,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 100
-      max_charges: 1
+      charges_count: 1
       charges_left: 0
       weight: 0.9
       needs_reload: 1
@@ -12997,7 +12997,7 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -13013,7 +13013,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 100
-      max_charges: 1
+      charges_count: 1
       charges_left: 0
       weight: 0.9
       needs_reload: 1
@@ -13040,7 +13040,50 @@ MonoBehaviour:
     reloaded: 0
     recalc_weapon_data:
       damage_rate: 0
-      max_charges: 0
+      charges_count: 0
+      charges_left: 0
+      weight: 0
+      needs_reload: 0
+      accumulates_charges: 0
+      distance_attack: 0
+      impact_on_hero:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+  - weapon_name: crossbow
+    weapon_gameobj: {fileID: 0}
+    initial_weapon_data:
+      damage_rate: 100
+      charges_count: 5
+      charges_left: 0
+      weight: 0.7
+      needs_reload: 1
+      accumulates_charges: 1
+      distance_attack: 1
+      impact_on_hero:
+        impact_time: 0.1
+        impact_val: {x: -20, y: 0}
+      impact_on_foe:
+        impact_time: 0
+        impact_val: {x: 0, y: 0}
+    attack_sound: {fileID: 8300000, guid: b98e3edc55d582849814b8c061a03caf, type: 3}
+    pickup_sound: {fileID: 8300000, guid: 5fb14cb18debd434e9b500cd76df3714, type: 3}
+    attack_sound_delay: 0
+    turn_sound_off_after_attack: 0
+    use_2nd_audiosource: 0
+    anim_layer_index: 12
+    animation_state: 16
+    emit_timeout: 0
+    num_of_particles_to_emit: 1
+    weapon_ps: {fileID: 0}
+    gauss_gun: {fileID: 0}
+    ally_insect: {fileID: 0}
+    reloaded: 0
+    recalc_weapon_data:
+      damage_rate: 0
+      charges_count: 0
       charges_left: 0
       weight: 0
       needs_reload: 0
@@ -31683,16 +31726,16 @@ MonoBehaviour:
     show_charges_num: 1
   - weapon_name: boxing
     weapon_image:
-    - {fileID: 21300000, guid: 4b5ad050cb79dfa48ba11673e6a6c562, type: 3}
-    - {fileID: 21300002, guid: 4b5ad050cb79dfa48ba11673e6a6c562, type: 3}
-    - {fileID: 21300004, guid: 4b5ad050cb79dfa48ba11673e6a6c562, type: 3}
+    - {fileID: 7111453872787576572, guid: 4b5ad050cb79dfa48ba11673e6a6c562, type: 3}
+    - {fileID: 2829167910139871759, guid: 4b5ad050cb79dfa48ba11673e6a6c562, type: 3}
+    - {fileID: 4631741145695828167, guid: 4b5ad050cb79dfa48ba11673e6a6c562, type: 3}
     show_charges_num: 1
   - weapon_name: crossbow
     weapon_image:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    show_charges_num: 0
+    - {fileID: 3725004510483047843, guid: 7cdf2cfd551430242bc3d9a836772ce2, type: 3}
+    - {fileID: -2646953505582793704, guid: 7cdf2cfd551430242bc3d9a836772ce2, type: 3}
+    - {fileID: 1683563890539715877, guid: 7cdf2cfd551430242bc3d9a836772ce2, type: 3}
+    show_charges_num: 1
   - weapon_name: ally_spider
     weapon_image:
     - {fileID: 21300000, guid: a378d67986d7ce04591d81956ba5138b, type: 3}

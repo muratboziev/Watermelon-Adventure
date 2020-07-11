@@ -366,7 +366,7 @@ public class SceneLoadHandler : MonoBehaviour
                 {                    
 
                     if (evo_pam_mgr.evo_items[8].is_bought) //AMMO
-                        w.recalc_weapon_data.max_charges = recalc_params_rounded(w.initial_weapon_data.max_charges, evo_pam_mgr.evo_items[9].value);
+                        w.recalc_weapon_data.charges_count = recalc_params_rounded(w.initial_weapon_data.charges_count, evo_pam_mgr.evo_items[9].value);
 
                     if (evo_pam_mgr.evo_items[9].is_bought)          //DAMAGE
                         w.recalc_weapon_data.damage_rate = recalc_params_rounded(w.initial_weapon_data.damage_rate, evo_pam_mgr.evo_items[10].value);

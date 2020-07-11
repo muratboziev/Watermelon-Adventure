@@ -19,6 +19,7 @@ public class HeroState
     public static int MINIGUN       = 12;
     public static int BOXING        = 12;
     public static int INSECT        = 12;
+    public static int CROSSBOW        = 12;
 
     public static int UNEXISTING_STATE = 99;
 }
@@ -253,6 +254,7 @@ public class HeroController : MonoBehaviour
         if (attack_pressed && time_to_trigger_attack_anim + 0.1f > Time.time)
         {
             arms_anim_state = weap_man.animation_state;
+            Debug.Log(arms_anim_state);            
         }
 
         if (move_hor > 0 && !facingRight || move_hor < 0 && facingRight)     //faces wrong direction
@@ -588,7 +590,7 @@ public class HeroController : MonoBehaviour
 
     public void play_weap_switched_sound()
     {
-        if (weap_man.turn_sound_off_after_attack)
+        //if (weap_man.turn_sound_off_after_attack)
             audio_source_attack.Stop();
 
         audio_source_weap_switch.clip = weap_man.weapon_pick_sound;

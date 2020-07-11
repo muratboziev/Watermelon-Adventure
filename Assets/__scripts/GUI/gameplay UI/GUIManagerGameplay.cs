@@ -266,14 +266,14 @@ public class GUIManagerGameplay : MonoBehaviour
 
     int actual_weapon_image_id(string weapon_name)
     {
-        
-        int charges_left_grade = weap_man.max_charges_of_weapon(weapon_name) / 3;
+
+        int charges_left_grade = weap_man.charges_count / 3;// max_charges_of_weapon(weapon_name) / 3;
         int charges_left = weap_man.charges_left_of_weapon(weapon_name);
         
-        if (charges_left >= charges_left_grade * 2 || weapon_name == "roll")
+        if (charges_left > charges_left_grade * 2 || weapon_name == "roll")
             return 0;
 
-        if (charges_left >= charges_left_grade)
+        if (charges_left > charges_left_grade)
             return 1;        
 
         return 2;

@@ -6,7 +6,7 @@ using UnityEngine;
 public struct WeaponData
 {
     public int damage_rate;
-    public int max_charges;
+    public int charges_count;
     public int charges_left;
     public float weight;
     public bool needs_reload;
@@ -57,7 +57,7 @@ public class Weapon
 
     private static string gauss_gun_str = "gauss_gun";
     private static string melee_weapons = "katana shoe boxing";
-    private static string weapons_with_ps = "insecticide flamethrower shotgun minigun";
+    private static string weapons_with_ps = "insecticide flamethrower shotgun minigun crossbow";
     private static string insect_weapons = "ally_spider ally_dragonfly ally_praying_mantis";
     private static string roll_weapon = "roll";
 
@@ -80,9 +80,9 @@ public class Weapon
         else
         {
             if (recalc_weapon_data.accumulates_charges)
-                recalc_weapon_data.charges_left += recalc_weapon_data.max_charges;
+                recalc_weapon_data.charges_left += recalc_weapon_data.charges_count;
             else
-                recalc_weapon_data.charges_left = recalc_weapon_data.max_charges;
+                recalc_weapon_data.charges_left = recalc_weapon_data.charges_count;
         }
     }
 
@@ -370,17 +370,17 @@ public class WeaponManager : MonoBehaviour
         return  weapons_dict[weapon_name].recalc_weapon_data.charges_left;
     }
 
-    public int max_charges
+    public int charges_count
     {
         get
         {
-            return current_weapon.recalc_weapon_data.max_charges;
+            return current_weapon.recalc_weapon_data.charges_count;
         }
     }
 
     public int max_charges_of_weapon(string weapon_name)
     {
-        return weapons_dict[weapon_name].recalc_weapon_data.max_charges;
+        return weapons_dict[weapon_name].recalc_weapon_data.charges_count;
     }
 
     public AudioClip weapon_attack_sound
