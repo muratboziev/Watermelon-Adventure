@@ -16,7 +16,7 @@ public class RequiredLinks
     public EvoPanelManager evo_pan_man;
     public MenuManager menu_man;
     public EventSystem event_sys;
-    public CinemachineVirtualCamera cinemach_camera;
+    public CinemachineVirtualCamera cinemachine_camera;
     public CinemachineConfiner cinemach_confiner;
     public AllySpiderController ally_spider;
     public AllyDragonflyController ally_dragonfly;
@@ -29,7 +29,7 @@ public class RequiredLinks
     public DialogManager dialog_man;
     public PickItem pick_item;
     public PickableItemSpawnManager pickable_manager;
-    public AudioManager audio_man;
+    public AudioManager audio_man;    
 }
 
 public class SceneLoadHandler : MonoBehaviour
@@ -129,7 +129,7 @@ public class SceneLoadHandler : MonoBehaviour
         object_to_link.game_man = FindObjectOfType<GameManager>() as GameManager;
         object_to_link.menu_man = FindObjectOfType<MenuManager>() as MenuManager;
         object_to_link.event_sys = FindObjectOfType<EventSystem>() as EventSystem;
-        object_to_link.cinemach_camera = FindObjectOfType<CinemachineVirtualCamera>() as CinemachineVirtualCamera;
+        object_to_link.cinemachine_camera = FindObjectOfType<CinemachineVirtualCamera>() as CinemachineVirtualCamera;
         object_to_link.cinemach_confiner = FindObjectOfType<CinemachineConfiner>() as CinemachineConfiner;
         object_to_link.evo_pan_man = FindObjectOfType<EvoPanelManager>() as EvoPanelManager;
         object_to_link.game_progr = FindObjectOfType<GameProgressSaver>() as GameProgressSaver;
@@ -160,6 +160,7 @@ public class SceneLoadHandler : MonoBehaviour
 
             object_to_link.hero_cont.weap_man = object_to_link.weap_man;
             object_to_link.hero_cont.game_man = object_to_link.game_man;
+            //object_to_link.hero_cont.cinemachineFramingTransposer = object_to_link.cinemachine_camera.GetCinemachineComponent<CinemachineFramingTransposer>();
 
             object_to_link.gui_man_hp_score.game_man = object_to_link.game_man;
 
@@ -188,7 +189,9 @@ public class SceneLoadHandler : MonoBehaviour
             object_to_link.game_man.pickable_object_spawn_manager = object_to_link.pickable_manager;            
 
             object_to_link.bg_scroll_cont.menu_man = object_to_link.menu_man;
-            object_to_link.bg_scroll_cont.hero_rb2d = object_to_link.hero_cont.rb2d;            
+            object_to_link.bg_scroll_cont.hero_rb2d = object_to_link.hero_cont.rb2d;
+
+            object_to_link.pickable_manager.dna_parts_parent_go = GameObject.Find("/dna_parts");
 
             //линкуем насекомых-союзников
 
@@ -229,10 +232,10 @@ public class SceneLoadHandler : MonoBehaviour
 
             //линкуем поля cinemachine
 
-            object_to_link.cinemach_camera.Follow = object_to_link.hero_cont.gameObject.transform;
-            object_to_link.cinemach_camera.LookAt = object_to_link.hero_cont.gameObject.transform;
-            object_to_link.cinemach_camera.m_Lens.OrthographicSize = 110;
-            object_to_link.cinemach_camera.transform.position = new Vector3(1,1,-50);
+            object_to_link.cinemachine_camera.Follow = object_to_link.hero_cont.gameObject.transform;
+            object_to_link.cinemachine_camera.LookAt = object_to_link.hero_cont.gameObject.transform;
+            object_to_link.cinemachine_camera.m_Lens.OrthographicSize = 110;
+            object_to_link.cinemachine_camera.transform.position = new Vector3(1,1,-50);
             object_to_link.cinemach_confiner.m_BoundingShape2D = GameObject.Find("camera_border").GetComponent<PolygonCollider2D>();
 
             //линкуем поля всех оружий - экземпляров класса weapon
@@ -311,8 +314,8 @@ public class SceneLoadHandler : MonoBehaviour
         }
         else
         {
-            object_to_link.cinemach_camera.LookAt = null;
-            object_to_link.cinemach_camera.LookAt = null;
+            object_to_link.cinemachine_camera.LookAt = null;
+            object_to_link.cinemachine_camera.LookAt = null;
             object_to_link.bg_scroll_cont = FindObjectOfType<BackgroundScrollController>() as BackgroundScrollController;
 
             object_to_link.evo_pan_man.game_man = object_to_link.game_man;

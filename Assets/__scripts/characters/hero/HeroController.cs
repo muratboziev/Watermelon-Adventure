@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cinemachine;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -62,12 +63,13 @@ public class HeroController : MonoBehaviour
 
     [Header("Links")]
     public GameObject body;
-    public GameObject body_rolls;
+    public GameObject body_rolls;    
 
     public Rigidbody2D rb2d;            //public for background scroll controller        
     public WeaponManager weap_man;    
-    public GameManager game_man;    
-    
+    public GameManager game_man;
+    //public CinemachineFramingTransposer cinemachineFramingTransposer;
+
     public WeaponLinks [] weapons_links;
 
     [Header("PS")]
@@ -82,7 +84,7 @@ public class HeroController : MonoBehaviour
     public AudioSource audio_source_attack_insect;
     public AudioSource audio_source_weap_switch;
     public AudioSource audio_source_hit;
-    public AudioSource audio_source_died;    
+    public AudioSource audio_source_died;
 
     [HideInInspector]
     public bool facingRight = true;
@@ -324,6 +326,7 @@ public class HeroController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+        //StartCoroutine(change_cinemachine_position());
     }
 
     void check_and_emit_dirt(bool condition_air = false, bool unconditional = false)        //2й параметр для roll т.к. при нем rb2d.velocity не успевает стать != 0 и ps не стартует
@@ -505,14 +508,35 @@ public class HeroController : MonoBehaviour
         game_man.pickable_object_spawn_manager.return_dna_part_to_stack(dna_part);
     }
 
+    //coroutines--------------------------------------------------------------------------------------------------
+
+    /*IEnumerator change_cinemachine_position()
+    {
+        float required_pos = 1 - cinemachineFramingTransposer.m_ScreenX;
+        float pos_delta = 0.02f;
+
+        if (required_pos < 0.5)
+            pos_delta *= -1;
+
+        while ((cinemachineFramingTransposer.m_ScreenX < required_pos && pos_delta > 0) || (cinemachineFramingTransposer.m_ScreenX > required_pos && pos_delta < 0))
+        {
+            cinemachineFramingTransposer.m_ScreenX += pos_delta;
+            yield return null;
+        }
+
+        if (pos_delta > 0)
+            cinemachineFramingTransposer.m_ScreenX = 0.75f;
+        else
+            cinemachineFramingTransposer.m_ScreenX = 0.25f;
+
+    }*/
+
     IEnumerator take_pill(GameObject pill, Animator take_pill_anim)
     {
         take_pill_anim.Play("take_pill");
-        yield return new WaitForSeconds(1.4f); 
-        pill.SetActive(false);        
+        yield return new WaitForSeconds(1.4f);
+        pill.SetActive(false);
     }
-
-    //coroutines--------------------------------------------------------------------------------------------------
 
     IEnumerator invincible_while_roll()
     {

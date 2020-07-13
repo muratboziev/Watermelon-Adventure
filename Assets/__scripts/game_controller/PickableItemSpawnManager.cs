@@ -15,6 +15,7 @@ public class PickableItemPrefabData
 public class PickableItemSpawnManager : MonoBehaviour
 {
     public PickableItemPrefabData [] pickable_dna;
+    public GameObject dna_parts_parent_go;
 
     //словарь стеков инстанциированных но не активированных pickable_dna
     public Dictionary<string, PickableItemPrefabData> pickable_dna_dict = new Dictionary<string, PickableItemPrefabData>();
@@ -39,6 +40,7 @@ public class PickableItemSpawnManager : MonoBehaviour
         {
             cur_go = Instantiate(pickable_data.prefab);
             cur_go.transform.position = Vector3.zero;
+            cur_go.transform.SetParent(dna_parts_parent_go.transform);
             cur_go.SetActive(false);
 
             pickable_data.stack.Push(cur_go);
