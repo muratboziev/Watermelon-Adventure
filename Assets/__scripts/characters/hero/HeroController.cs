@@ -49,8 +49,7 @@ public class WeaponLinks
 }
 
 public class HeroController : MonoBehaviour
-{
-    public bool mobile_input;
+{    
     [Header("Hero params")]
     public HeroParams initial_hero_params;    
     public HeroParams recalc_hero_params;
@@ -93,6 +92,8 @@ public class HeroController : MonoBehaviour
     private bool invincible = false;
     private float wait_for_roll_start_time = 0.1f;
     private float time_to_trigger_attack_anim;
+
+    private bool mobile_input = false;
 
     //-------------------------------------------------------    
 
@@ -139,6 +140,8 @@ public class HeroController : MonoBehaviour
         wait_for_roll_anim_start = new WaitForSeconds(wait_for_roll_start_time);
 
         block_user_control = false;
+
+        mobile_input = (Application.platform == RuntimePlatform.Android);
     }
 
     void Update()

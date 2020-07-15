@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87d6e1e9fbcae944a133065598c5035, type: 3}
+  m_Name: dirt_grass
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Transform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_InstancedGameObject: {fileID: 0}
+  m_Flags: 1
+  m_ColliderType: 1
+  m_Sprites:
+  - {fileID: -7958769179885505039, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: 3166126063481905031, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: -4518923213149584999, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: -7740865670872591874, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: 6386321496071227652, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: 8471749895449312017, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: 5724525717626506082, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: -8852013356066506089, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: -6123817399219974501, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: -6123817399219974501, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
+  - {fileID: -1389937323276542541, guid: 74279f9fb826fcb4f8213e49e795a5bb, type: 3}
