@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public NPCController npc_contr;
     public NpcBoxController box_cont;
     public GUIManagerHPScore gui_manager_hp;
-    public FoeBase[] foe_controller;
+    public Dictionary<int, FoeBase> foe_controller;
     public PickableItemSpawnManager pickable_object_spawn_manager;    
 
     [Header("Game data")]
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     bool[] evo_item_buy_state = new bool[16];             //сериализуем этот массив т.к. evo_item не получается (т.к. там поля типа Sprite)    
     
     string sound_level_str = "sound_level", music_level_str = "music_level";
-    string kinematic_foes = "larva|caterpillar_web|sawfly|rose_sawfly|cab_butterfly|thrips|ladybug_larva|thrips_fly";
+    string kinematic_foes = "larva|caterpillar_web|sawfly|rose_sawfly|cab_butterfly|thrips|ladybug_larva|thrips_fly|centipide";
 
     Vector2 force_to_dna_part = new Vector2();
 
@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
 
     public void run_enemies()
     {
-        foreach (FoeBase fb in foe_controller)
+        foreach (var fb in foe_controller.Values)
         {
             fb.start_attack();
             if (kinematic_foes.Contains(fb.gameObject.name))
@@ -117,10 +117,9 @@ public class GameManager : MonoBehaviour
 
     public void stop_enemies()
     {
-        foreach (FoeBase fb in foe_controller)
+        foreach (var fb in foe_controller.Values)
         {
-            fb.stop_attack();
-            fb.stop_and_idle();
+            fb.stop_attack();            
             fb.stop_audioSources();
             fb.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         }

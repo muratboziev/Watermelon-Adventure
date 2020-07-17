@@ -259,7 +259,6 @@ public class HeroController : MonoBehaviour
         if (attack_pressed && time_to_trigger_attack_anim + 0.1f > Time.time)
         {
             arms_anim_state = weap_man.animation_state;
-            Debug.Log(arms_anim_state);            
         }
 
         if (move_hor > 0 && !facingRight || move_hor < 0 && facingRight)     //faces wrong direction

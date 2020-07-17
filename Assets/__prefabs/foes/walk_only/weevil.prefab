@@ -399,14 +399,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp_init: 100
-  hp_left: 0
-  cur_species: weevil
   game_man: {fileID: 0}
   weap_man: {fileID: 0}
-  foe_attack_area: {fileID: 1197940954498984}
-  foe_vulnerable_area: {fileID: 1222109111317722}
-  foe_body: {fileID: 1924327524911888}
-  foe_rb2d: {fileID: 50195063238733996}
+  ps_parent: {fileID: 1841895144213264}
+  audiosources_parent: {fileID: 5866154665319938764}
+  ps_destroyer: {fileID: 4284506622661621619}
+  audiosource_destroyer: {fileID: 4079054857826604766}
   ps_damage_color: {r: 0.3019608, g: 0.121568635, b: 0.15294118, a: 1}
   ps_insect_wounded: {fileID: 198471818601140650}
   ps_insect_killed: {fileID: 198535000037432632}
@@ -5784,6 +5782,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4604044516166242}
+  - component: {fileID: 4284506622661621619}
   m_Layer: 10
   m_Name: particle_systems
   m_TagString: Untagged
@@ -5807,6 +5806,19 @@ Transform:
   m_Father: {fileID: 4951785525600600}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4284506622661621619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841895144213264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &1891884315908632
 GameObject:
   m_ObjectHideFlags: 0
@@ -11306,6 +11318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5044059833034229162}
+  - component: {fileID: 4079054857826604766}
   m_Layer: 10
   m_Name: audiosources
   m_TagString: Untagged
@@ -11330,6 +11343,19 @@ Transform:
   m_Father: {fileID: 4951785525600600}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4079054857826604766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866154665319938764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &6341691541411469648
 GameObject:
   m_ObjectHideFlags: 0

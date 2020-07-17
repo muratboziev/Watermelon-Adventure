@@ -11572,7 +11572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   load_main: 0
-  scene_to_load: act1_level1
+  scene_to_load: act2_level1
   game_progr: {fileID: 0}
   hero_contr: {fileID: 0}
   bg_scroll_cont: {fileID: 0}
@@ -11583,7 +11583,6 @@ MonoBehaviour:
   npc_contr: {fileID: 0}
   box_cont: {fileID: 0}
   gui_manager_hp: {fileID: 0}
-  foe_controller: []
   pickable_object_spawn_manager: {fileID: 0}
   scenes:
   - name: act1_level1
@@ -11861,7 +11860,7 @@ MonoBehaviour:
     prefab: {fileID: 3437332189475055111, guid: 54de9c849b480a141a9dded0ae0c67f9,
       type: 3}
   - name: banana
-    scene_name: act1_level2
+    scene_name: act2_level1
     full_name: Mick the Banana
     saved_npc_sprite: {fileID: 21300000, guid: 1a8532224235ccd46a62c3a6a7572257, type: 3}
     not_saved_npc_sprite: {fileID: 21300002, guid: 1a8532224235ccd46a62c3a6a7572257,
@@ -20084,6 +20083,49 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!1 &2001364908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001364910}
+  - component: {fileID: 2001364909}
+  m_Layer: 0
+  m_Name: dna_parts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2001364909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001364908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9abc069a37bb04e8a7326ca2fc1b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2001364910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001364908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2744.0876, y: -904.1449, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2013364011
 GameObject:
   m_ObjectHideFlags: 0

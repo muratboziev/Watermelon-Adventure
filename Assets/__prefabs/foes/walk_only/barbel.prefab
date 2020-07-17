@@ -5313,14 +5313,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp_init: 100
-  hp_left: 0
-  cur_species: cockroach
   game_man: {fileID: 0}
   weap_man: {fileID: 0}
-  foe_attack_area: {fileID: 1173050543038978}
-  foe_vulnerable_area: {fileID: 1540296248341794}
-  foe_body: {fileID: 1002800613023164}
-  foe_rb2d: {fileID: 50665649902373130}
+  ps_parent: {fileID: 1706699850816836}
+  audiosources_parent: {fileID: 8846147138564156652}
+  ps_destroyer: {fileID: 8642227442883676348}
+  audiosource_destroyer: {fileID: 5336007820996751661}
   ps_damage_color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   ps_insect_wounded: {fileID: 198232301121050120}
   ps_insect_killed: {fileID: 198354400896177534}
@@ -10388,6 +10386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4392979179187108}
+  - component: {fileID: 8642227442883676348}
   m_Layer: 10
   m_Name: particle_systems
   m_TagString: Untagged
@@ -10411,6 +10410,19 @@ Transform:
   m_Father: {fileID: 4625763914545042}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8642227442883676348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706699850816836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &1726235217252386
 GameObject:
   m_ObjectHideFlags: 0
@@ -11577,6 +11589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3821509596847468129}
+  - component: {fileID: 5336007820996751661}
   m_Layer: 10
   m_Name: audiosources
   m_TagString: Untagged
@@ -11601,3 +11614,16 @@ Transform:
   m_Father: {fileID: 4625763914545042}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5336007820996751661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8846147138564156652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2

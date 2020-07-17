@@ -452,6 +452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4622382672312990}
+  - component: {fileID: 365929655083268398}
   m_Layer: 10
   m_Name: particle_systems
   m_TagString: Untagged
@@ -475,6 +476,19 @@ Transform:
   m_Father: {fileID: 4769824835458110}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365929655083268398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362492565043738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &1371153693628360
 GameObject:
   m_ObjectHideFlags: 0
@@ -10615,14 +10629,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp_init: 100
-  hp_left: 0
-  cur_species: locust
   game_man: {fileID: 0}
   weap_man: {fileID: 0}
-  foe_attack_area: {fileID: 1371153693628360}
-  foe_vulnerable_area: {fileID: 1052640052704324}
-  foe_body: {fileID: 1949953665683480}
-  foe_rb2d: {fileID: 50857595342967322}
+  ps_parent: {fileID: 1362492565043738}
+  audiosources_parent: {fileID: 1047439561873864749}
+  ps_destroyer: {fileID: 365929655083268398}
+  audiosource_destroyer: {fileID: 6158082774070963691}
   ps_damage_color: {r: 0.37254903, g: 0.37647063, b: 0.38823533, a: 1}
   ps_insect_wounded: {fileID: 198022679192797090}
   ps_insect_killed: {fileID: 198178880464762596}
@@ -11228,6 +11240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6843674585581402153}
+  - component: {fileID: 6158082774070963691}
   m_Layer: 10
   m_Name: audiosources
   m_TagString: Untagged
@@ -11252,6 +11265,19 @@ Transform:
   m_Father: {fileID: 4769824835458110}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6158082774070963691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047439561873864749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &1236230112191492409
 GameObject:
   m_ObjectHideFlags: 0

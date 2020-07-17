@@ -8,10 +8,11 @@ public class CatWebMove : FoeBase
 
     public GameObject web_start_point;
     public LineRenderer line_renderer;
-    public float move_speed = 150f;
-    public float max_web_length = 200f;
+    public float move_speed = 150f;    
+    public Transform groundCheck_end;
 
-    private Coroutine attack_cor;                
+    private Coroutine attack_cor;                    
+    private Coroutine web_move_cor;                    
 
     Ray2D attack_direction_ray = new Ray2D();
 
@@ -28,7 +29,8 @@ public class CatWebMove : FoeBase
 
     public override void stop_attack()
     {
-        StopCoroutine(attack_cor);
+        StopCoroutine(attack_cor);        
+        StopCoroutine(web_move_cor);
     }
 
     IEnumerator attack()
@@ -74,7 +76,7 @@ public class CatWebMove : FoeBase
             {
                 cs_attack = true;
                 crawl_attack();
-                StartCoroutine(attack_coroutine_cat_web());
+                web_move_cor = StartCoroutine(attack_coroutine_cat_web());
             }
 
             if (ts_crawl_in)
@@ -103,14 +105,14 @@ public class CatWebMove : FoeBase
         line_renderer.positionCount = 2;
         line_renderer.SetPosition(0, attack_direction_ray.origin);        
 
-        while (true)
+        while (gameObject.activeSelf)
         {
             cur_web_length += Time.deltaTime * move_speed;
 
             transform.position = attack_direction_ray.GetPoint(cur_web_length);
-            line_renderer.SetPosition(1, attack_direction_ray.GetPoint(cur_web_length));            
-
-            if (cur_web_length > max_web_length)
+            line_renderer.SetPosition(1, attack_direction_ray.GetPoint(cur_web_length));
+            
+            if (is_grounded(groundCheck, groundCheck_end) && move_speed > 0)
             {
                 move_speed = -move_speed;                
             }

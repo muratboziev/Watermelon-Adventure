@@ -94,10 +94,7 @@ public class FoePool : MonoBehaviour
         go.SetActive(false);
 
         //включаем его компоненты на случай последующего использования
-        vuln_area.foe_attack_area.SetActive(true);
-        vuln_area.foe_rb2d.simulated = true;
-        vuln_area.foe_vulnerable_area.SetActive(true);
-        vuln_area.foe_body.SetActive(true);
+        //vuln_area.foe_rb2d.simulated = true;
 
         //возвращаем hp
         //vuln_area.hp = foe_data_dict[species].hp;

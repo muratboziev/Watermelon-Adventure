@@ -350,7 +350,7 @@ MonoBehaviour:
   fly_sound: {fileID: 0}
   idle_sound: {fileID: 0}
   walk_sound: {fileID: 0}
-  hit_sound: {fileID: 0}
+  hit_sound: {fileID: 8300000, guid: 9ed34543a199d4b4ca5bfbbf6f82a703, type: 3}
   killed_sound: {fileID: 8300000, guid: bded03edb2f335d4fb052d2d03820d9b, type: 3}
 --- !u!114 &114140032083136434
 MonoBehaviour:
@@ -365,14 +365,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp_init: 100
-  hp_left: 0
-  cur_species: potato_bug
   game_man: {fileID: 0}
   weap_man: {fileID: 0}
-  foe_attack_area: {fileID: 1985039598068364}
-  foe_vulnerable_area: {fileID: 1187003982387958}
-  foe_body: {fileID: 1218776640990452}
-  foe_rb2d: {fileID: 50431666331141458}
+  ps_parent: {fileID: 1953428966551976}
+  audiosources_parent: {fileID: 7295078477024263541}
+  ps_destroyer: {fileID: 6781161275741530668}
+  audiosource_destroyer: {fileID: 954171609462450470}
   ps_damage_color: {r: 0.7254902, g: 0.53333336, b: 0, a: 0}
   ps_insect_wounded: {fileID: 198930227958002886}
   ps_insect_killed: {fileID: 198416866342170148}
@@ -11068,6 +11066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4285509478673132}
+  - component: {fileID: 6781161275741530668}
   m_Layer: 10
   m_Name: particle_systems
   m_TagString: Untagged
@@ -11091,6 +11090,19 @@ Transform:
   m_Father: {fileID: 4160588077295424}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6781161275741530668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953428966551976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &1985039598068364
 GameObject:
   m_ObjectHideFlags: 0
@@ -11776,6 +11788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 31498419410366535}
+  - component: {fileID: 954171609462450470}
   m_Layer: 10
   m_Name: audiosources
   m_TagString: Untagged
@@ -11801,6 +11814,19 @@ Transform:
   m_Father: {fileID: 4160588077295424}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &954171609462450470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7295078477024263541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &8142066756108222646
 GameObject:
   m_ObjectHideFlags: 0

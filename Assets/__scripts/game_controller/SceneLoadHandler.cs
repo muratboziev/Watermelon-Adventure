@@ -218,16 +218,20 @@ public class SceneLoadHandler : MonoBehaviour
             //линкуем насекомых противников                       
 
             GameObject [] foes = GameObject.FindGameObjectsWithTag("Enemy");
-            object_to_link.game_man.foe_controller = new FoeBase[foes.Length];
+            FoeBase cur_fb;
+            object_to_link.game_man.foe_controller = new Dictionary<int, FoeBase>();
 
             for (int i = 0; i < foes.Length; i++)
             {
-                object_to_link.game_man.foe_controller[i] = foes[i].GetComponent<FoeBase>();
-                object_to_link.game_man.foe_controller[i].player = object_to_link.hero_cont.gameObject;
+                cur_fb = foes[i].GetComponent<FoeBase>();                
+                cur_fb.player = object_to_link.hero_cont.gameObject;
+
+                object_to_link.game_man.foe_controller[i] = cur_fb;
 
                 FoeTakeDamage ftd = foes[i].GetComponent<FoeTakeDamage>();
                 ftd.weap_man = object_to_link.weap_man;
                 ftd.game_man = object_to_link.game_man;
+                ftd.ID = i;
             }
 
             //линкуем поля cinemachine

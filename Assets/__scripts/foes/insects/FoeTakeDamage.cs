@@ -6,20 +6,16 @@ using UnityEngine;
 public class FoeTakeDamage : MonoBehaviour
 {
     public int hp_init;
-    public int hp_left;
-    public string cur_species;
+    private int hp_left;
+    [HideInInspector]
+    public int ID;
+    //public string cur_species;
 
     [Header("Links")]
     public GameManager game_man;
     public WeaponManager weap_man;
-
-    //object to deactivate after foe is killed        
-    [Header("Deactivate after death")]
-    public GameObject foe_attack_area;
-    public GameObject foe_vulnerable_area;        
-    public GameObject foe_body;
-    public Rigidbody2D foe_rb2d;
-    private FoeBase foe_base;
+    public GameObject ps_parent, audiosources_parent, line_renderer;
+    public DestroyGameObjectOnTimer ps_destroyer, audiosource_destroyer;
 
     //variables related to particle systems 
     [Header("Particle systems")]
@@ -27,7 +23,9 @@ public class FoeTakeDamage : MonoBehaviour
     public ParticleSystem ps_insect_wounded, ps_insect_killed;
     public int wounded_ps_to_emit = 8;
     public int kill_ps_to_emit = 8;
-    WaitForSeconds time_before_deactivating_foe;
+    
+    private Rigidbody2D foe_rb2d;
+    private FoeBase foe_base;
 
     //damage and impact received from hero    
     int damage_rate = 0;
@@ -38,8 +36,7 @@ public class FoeTakeDamage : MonoBehaviour
         hp_left = hp_init;
 
         foe_base = gameObject.GetComponent<FoeBase>();
-        foe_rb2d = gameObject.GetComponent<Rigidbody2D>();
-        time_before_deactivating_foe = new WaitForSeconds(ps_insect_killed.main.startLifetime.constant);
+        foe_rb2d = gameObject.GetComponent<Rigidbody2D>();        
 
         //задае цвет particle system получения урона
         ps_damage_color = new Color(ps_damage_color.r, ps_damage_color.g, ps_damage_color.b);
@@ -80,30 +77,39 @@ public class FoeTakeDamage : MonoBehaviour
             //StartCoroutine(ImpactType.push(foe_rb2d, impact_rate));
         }
         else
-        {
+        {            
             foe_base.play_killed_sound();            
             ps_insect_killed.Emit(kill_ps_to_emit);            
             StartCoroutine(inst_dna_parts());
-            StartCoroutine(disable_foe());
+            disable_foe();
         }        
     }
 
     public IEnumerator inst_dna_parts()
     {
-        game_man.instantiate_dna_parts(foe_body.transform);
+        game_man.instantiate_dna_parts(gameObject.transform);
         yield return null;
     }
 
-    public IEnumerator disable_foe()
+    public void disable_foe()
     {
         foe_base.stop_attack();
-        foe_base.stop_and_idle();
-        foe_attack_area.SetActive(false);        
-        foe_rb2d.simulated = false;        
-        foe_vulnerable_area.SetActive(false);        
-        foe_body.SetActive(false);        
+        foe_base.stop_audioSources();
+        foe_rb2d.simulated = false;
 
-        yield return time_before_deactivating_foe;                  //ждем чтобы ps сразу не исчезла
+        ps_parent.transform.parent = null;
+        audiosources_parent.transform.parent = null;
+        if (line_renderer != null)
+            line_renderer.transform.parent = null;
+
+        ps_destroyer.DestroyGO();
+        audiosource_destroyer.DestroyGO();
+
+        gameObject.SetActive(false);
+
+        game_man.foe_controller.Remove(ID);
+
+        Destroy(gameObject);        
 
         //foe_pool.return_foe(ref cur_species, gameObject, this);
     }

@@ -344,14 +344,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp_init: 100
-  hp_left: 0
-  cur_species: cricket
   game_man: {fileID: 0}
   weap_man: {fileID: 0}
-  foe_attack_area: {fileID: 1520455203461228}
-  foe_vulnerable_area: {fileID: 1903693421977338}
-  foe_body: {fileID: 1487525617597498}
-  foe_rb2d: {fileID: 50082506208140932}
+  ps_parent: {fileID: 1924754319186090}
+  audiosources_parent: {fileID: 1580752182554462875}
+  ps_destroyer: {fileID: 1205742752898163955}
+  audiosource_destroyer: {fileID: 8831422110224209465}
   ps_damage_color: {r: 0.5849056, g: 0.25415257, b: 0, a: 0}
   ps_insect_wounded: {fileID: 198936751663335402}
   ps_insect_killed: {fileID: 198759136665303952}
@@ -11433,6 +11431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4510030748188228}
+  - component: {fileID: 1205742752898163955}
   m_Layer: 10
   m_Name: particle_systems
   m_TagString: Untagged
@@ -11456,6 +11455,19 @@ Transform:
   m_Father: {fileID: 4344201493978882}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1205742752898163955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924754319186090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &1960057259300532
 GameObject:
   m_ObjectHideFlags: 0
@@ -11512,6 +11524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4309843954614010055}
+  - component: {fileID: 8831422110224209465}
   m_Layer: 10
   m_Name: audiosources
   m_TagString: Untagged
@@ -11537,6 +11550,19 @@ Transform:
   m_Father: {fileID: 4344201493978882}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8831422110224209465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580752182554462875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &2740886752352206112
 GameObject:
   m_ObjectHideFlags: 0

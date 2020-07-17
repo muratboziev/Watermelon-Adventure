@@ -37,7 +37,7 @@ public class MoveData
 }
 
 public class FoeBase : MonoBehaviour
-{
+{    
     [Header("Links")]
     public GameObject player;
     public Transform groundCheck;
@@ -220,7 +220,7 @@ public class FoeBase : MonoBehaviour
         if (audioSource_hit != null && !audioSource_hit.isPlaying)
         {
             stop_audioSources();
-            audioSource_hit.clip = hit_sound;
+            audioSource_hit.clip = hit_sound;            
             audioSource_hit.Play();
         }
     }
@@ -259,7 +259,7 @@ public class FoeBase : MonoBehaviour
     //--------------------------------------------------------------------------------------------------
 
     public bool is_grounded()
-    {
+    {        
         hit_info = Physics2D.Linecast(transform.position, groundCheck.position, 1 << ground_layer);
 
         if (hit_info.collider != null)
@@ -268,7 +268,19 @@ public class FoeBase : MonoBehaviour
         }
         
         return false;        
-    }    
+    }
+
+    public bool is_grounded(Transform from, Transform to)
+    {
+        hit_info = Physics2D.Linecast(from.position, to.position, 1 << ground_layer);
+
+        if (hit_info.collider != null)
+        {
+            return true;
+        }
+
+        return false;
+    }
 
     public bool is_looking_at_player()
     {

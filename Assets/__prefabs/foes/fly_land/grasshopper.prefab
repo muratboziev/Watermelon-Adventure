@@ -205,6 +205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4622382672312990}
+  - component: {fileID: 698362769012545358}
   m_Layer: 10
   m_Name: particle_systems
   m_TagString: Untagged
@@ -228,6 +229,19 @@ Transform:
   m_Father: {fileID: 4769824835458110}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &698362769012545358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362492565043738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &1371153693628360
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +287,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 17.992786, y: -10.030766}
+  m_Offset: {x: 17.992786, y: -9.346416}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -284,7 +298,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 26.376808, y: 5.5517426}
+  m_Size: {x: 26.376808, y: 4.1830444}
   m_EdgeRadius: 0
 --- !u!70 &70119043756131454
 CapsuleCollider2D:
@@ -10526,14 +10540,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp_init: 100
-  hp_left: 0
-  cur_species: locust
   game_man: {fileID: 0}
   weap_man: {fileID: 0}
-  foe_attack_area: {fileID: 1371153693628360}
-  foe_vulnerable_area: {fileID: 1052640052704324}
-  foe_body: {fileID: 1949953665683480}
-  foe_rb2d: {fileID: 50857595342967322}
+  ps_parent: {fileID: 1362492565043738}
+  audiosources_parent: {fileID: 1047439561873864749}
+  ps_destroyer: {fileID: 698362769012545358}
+  audiosource_destroyer: {fileID: 3274912846532013072}
   ps_damage_color: {r: 0.8980393, g: 0.7843138, b: 0, a: 0}
   ps_insect_wounded: {fileID: 198022679192797090}
   ps_insect_killed: {fileID: 198178880464762596}
@@ -10603,7 +10615,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.7326965, y: -7.2908516}
+  m_Offset: {x: -5.7326965, y: -6.6065025}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10614,7 +10626,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 34.74054, y: 5.7282486}
+  m_Size: {x: 34.74054, y: 4.3595505}
   m_EdgeRadius: 0
 --- !u!1 &1949953665683480
 GameObject:
@@ -11055,6 +11067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6843674585581402153}
+  - component: {fileID: 3274912846532013072}
   m_Layer: 10
   m_Name: audiosources
   m_TagString: Untagged
@@ -11079,6 +11092,19 @@ Transform:
   m_Father: {fileID: 4769824835458110}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3274912846532013072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047439561873864749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63d893bd819c5c44b866402977fdf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_before_destroy: 2
 --- !u!1 &4649538891270052574
 GameObject:
   m_ObjectHideFlags: 0

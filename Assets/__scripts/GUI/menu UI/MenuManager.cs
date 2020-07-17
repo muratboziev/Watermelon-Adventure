@@ -373,6 +373,8 @@ public class MenuManager : MonoBehaviour
     {
         cur_menu_state = make_transition(cur_menu_state.transition[1]);                  //show level completion panel                
 
+        yield return new WaitForSeconds(0.5f);
+
         level_complete_anim.SetBool("level_complete", true);
         level_complete_anim.SetBool("friend_saved", friend_saved);
         level_complete_anim.SetBool("dna_found", dna_found);
