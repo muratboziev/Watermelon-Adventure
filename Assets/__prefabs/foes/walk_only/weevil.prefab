@@ -364,8 +364,8 @@ MonoBehaviour:
     moveForce: 80
     flyForce: 0
     fly_delta: 0
-    walk_dist: 0
-    fly_dist: 250
+    walk_dist: 250
+    fly_dist: 0
     active_dist: 500
   wait_interval:
     time_before_fly: 2
@@ -399,10 +399,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp_init: 100
+  ID: 0
   game_man: {fileID: 0}
   weap_man: {fileID: 0}
   ps_parent: {fileID: 1841895144213264}
   audiosources_parent: {fileID: 5866154665319938764}
+  line_renderer: {fileID: 0}
   ps_destroyer: {fileID: 4284506622661621619}
   audiosource_destroyer: {fileID: 4079054857826604766}
   ps_damage_color: {r: 0.3019608, g: 0.121568635, b: 0.15294118, a: 1}

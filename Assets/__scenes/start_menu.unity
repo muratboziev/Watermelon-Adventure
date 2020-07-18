@@ -11572,7 +11572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   load_main: 0
-  scene_to_load: act2_level1
+  scene_to_load: act3_level1
   game_progr: {fileID: 0}
   hero_contr: {fileID: 0}
   bg_scroll_cont: {fileID: 0}
@@ -11881,12 +11881,13 @@ MonoBehaviour:
       - is_heroes_phrase: 1
         phrase: see ya!
     prefab: {fileID: 0}
-  - name: 
-    scene_name: 
-    full_name: 
-    saved_npc_sprite: {fileID: 0}
-    not_saved_npc_sprite: {fileID: 0}
-    name_text_color: 
+  - name: bellpepper
+    scene_name: act3_level1
+    full_name: Zac the Bellpepper
+    saved_npc_sprite: {fileID: 21300000, guid: a9d304ab0940388468577a590ff810ce, type: 3}
+    not_saved_npc_sprite: {fileID: 21300002, guid: a9d304ab0940388468577a590ff810ce,
+      type: 3}
+    name_text_color: yellow
     health_sprites:
       protect: {fileID: 0}
       full_hp: {fileID: 0}
@@ -11894,7 +11895,13 @@ MonoBehaviour:
       health_sprites_4hp: []
       dead: {fileID: 0}
     dialog:
-      replica: []
+      replica:
+      - is_heroes_phrase: 1
+        phrase: It's rather cold here, huh?
+      - is_heroes_phrase: 0
+        phrase: Yeah, I'll get myself a cup of coffee
+      - is_heroes_phrase: 1
+        phrase: Sounds good!
     prefab: {fileID: 0}
   - name: 
     scene_name: 
@@ -12540,7 +12547,7 @@ MonoBehaviour:
     weapon_gameobj: {fileID: 0}
     initial_weapon_data:
       damage_rate: 100
-      charges_count: 10
+      charges_count: 5
       charges_left: 0
       weight: 0.9
       needs_reload: 1

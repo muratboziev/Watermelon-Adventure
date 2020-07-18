@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: c100f5b1f83e0f84cafe8430ead4e976
+guid: 73c0603b45b89ca4d95e836ea5ee6dbf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8149642507056596343
-    second: pikes_sand_0
+      213: 5055243856168641302
+    second: pikes_snow_0
   - first:
-      213: -3866992251319304043
-    second: pikes_sand_1
+      213: 7485974967543709436
+    second: pikes_snow_1
   - first:
-      213: 3019775687040368922
-    second: pikes_sand_2
+      213: -6903656382971373038
+    second: pikes_snow_2
   - first:
-      213: -9216020297081094475
-    second: pikes_sand_3
+      213: 634318025029191420
+    second: pikes_snow_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -73,7 +73,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -85,7 +85,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -111,13 +111,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pikes_sand_0
+      name: pikes_snow_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 17
-        width: 10
-        height: 38
+        x: 5
+        y: 3
+        width: 13
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77548877ea8591170800000000000000
-      internalID: 8149642507056596343
+      spriteID: 61368ebd085d72640800000000000000
+      internalID: 5055243856168641302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pikes_sand_1
+      name: pikes_snow_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 17
-        width: 10
-        height: 38
+        x: 27
+        y: 3
+        width: 13
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 590ccee190fa55ac0800000000000000
-      internalID: -3866992251319304043
+      spriteID: cfeb8e1129683e760800000000000000
+      internalID: 7485974967543709436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pikes_sand_2
+      name: pikes_snow_2
       rect:
         serializedVersion: 2
-        x: 43
-        y: 17
-        width: 10
-        height: 38
+        x: 51
+        y: 3
+        width: 12
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a110767ecf568e920800000000000000
-      internalID: 3019775687040368922
+      spriteID: 21a12a9c8194130a0800000000000000
+      internalID: -6903656382971373038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pikes_sand_3
+      name: pikes_snow_3
       rect:
         serializedVersion: 2
-        x: 60
-        y: 17
-        width: 10
-        height: 38
+        x: 70
+        y: 3
+        width: 13
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,8 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bef0bd4e5e1a1080800000000000000
-      internalID: -9216020297081094475
+      spriteID: cf60e7c02ec8dc800800000000000000
+      internalID: 634318025029191420
       vertices: []
       indices: 
       edges: []

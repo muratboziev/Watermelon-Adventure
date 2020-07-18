@@ -29,8 +29,9 @@ public class CatWebMove : FoeBase
 
     public override void stop_attack()
     {
-        StopCoroutine(attack_cor);        
-        StopCoroutine(web_move_cor);
+        StopCoroutine(attack_cor);    
+        if (web_move_cor != null)
+            StopCoroutine(web_move_cor);
     }
 
     IEnumerator attack()
