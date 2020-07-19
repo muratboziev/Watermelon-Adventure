@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 2742940bb1fa2bb4ea3b15e3f5999a3e
+guid: 2f8d021abfbfcb84c8a6c7ae466add71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8823449866825469600
-    second: dirt_dungeon_0
+      213: 777547420381500451
+    second: pikes_dungeon_0
   - first:
-      213: 4688874465464423074
-    second: dirt_dungeon_1
+      213: 3071567990176194113
+    second: pikes_dungeon_1
   - first:
-      213: 3974972508738357228
-    second: dirt_dungeon_2
+      213: -3098889994360919275
+    second: pikes_dungeon_2
   - first:
-      213: 9184631941955190138
-    second: dirt_dungeon_3
-  - first:
-      213: -1802129588027358484
-    second: dirt_dungeon_4
-  - first:
-      213: -5837811616839433341
-    second: dirt_dungeon_5
-  - first:
-      213: 5481086442089953992
-    second: dirt_dungeon_6
-  - first:
-      213: 3248481898801048988
-    second: dirt_dungeon_7
+      213: 7723134510435832956
+    second: pikes_dungeon_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,7 +73,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +85,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -109,7 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -123,13 +111,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dirt_dungeon_0
+      name: pikes_dungeon_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 173
-        width: 64
-        height: 64
+        x: 13
+        y: 19
+        width: 13
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0617662481fcc8580800000000000000
-      internalID: -8823449866825469600
+      spriteID: 3245cdb52476aca00800000000000000
+      internalID: 777547420381500451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirt_dungeon_1
+      name: pikes_dungeon_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 173
-        width: 64
-        height: 64
+        x: 32
+        y: 19
+        width: 11
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a2186ecb7a321140800000000000000
-      internalID: 4688874465464423074
+      spriteID: 14e99ed20d660aa20800000000000000
+      internalID: 3071567990176194113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirt_dungeon_2
+      name: pikes_dungeon_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 109
-        width: 64
-        height: 64
+        x: 50
+        y: 19
+        width: 12
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce70b47bf60f92730800000000000000
-      internalID: 3974972508738357228
+      spriteID: 51bea1008f78ef4d0800000000000000
+      internalID: -3098889994360919275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dirt_dungeon_3
+      name: pikes_dungeon_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 109
-        width: 64
-        height: 64
+        x: 68
+        y: 19
+        width: 11
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,50 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7df1f4c61e567f70800000000000000
-      internalID: 9184631941955190138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dirt_dungeon_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 45
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce2886210bc8df6e0800000000000000
-      internalID: -1802129588027358484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dirt_dungeon_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 45
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38303a8b34debfea0800000000000000
-      internalID: -5837811616839433341
+      spriteID: c7496171be51e2b60800000000000000
+      internalID: 7723134510435832956
       vertices: []
       indices: 
       edges: []

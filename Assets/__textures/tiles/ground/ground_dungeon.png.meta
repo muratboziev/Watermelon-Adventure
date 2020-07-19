@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bff22356e35f28b4daa1df5b87703650
+guid: 181c38c544032ea41bcc16e9d41430f7
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -119,6 +119,12 @@ TextureImporter:
   - first:
       213: 619672672585242516
     second: ground_dungeon_38
+  - first:
+      213: -2149480305263740619
+    second: ground_dungeon_39
+  - first:
+      213: -5320205009092269024
+    second: ground_dungeon_40
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -678,6 +684,27 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: ground_dungeon_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02da8175ec660c1b0800000000000000
+      internalID: -5638393697057329888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: ground_dungeon_28
       rect:
         serializedVersion: 2
@@ -762,11 +789,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_dungeon_34
+      name: ground_dungeon_32
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 320
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -776,8 +803,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 803a184b73b5cba60800000000000000
-      internalID: 7691122558451688200
+      spriteID: 0d0d80a7ec82cb6a0800000000000000
+      internalID: -6432221300516138800
       vertices: []
       indices: 
       edges: []
@@ -786,7 +813,7 @@ TextureImporter:
       name: ground_dungeon_35
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 0
         width: 64
         height: 64
@@ -807,7 +834,7 @@ TextureImporter:
       name: ground_dungeon_36
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
         width: 64
         height: 64
@@ -828,7 +855,7 @@ TextureImporter:
       name: ground_dungeon_37
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 0
         width: 64
         height: 64
@@ -845,6 +872,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ground_dungeon_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497d5763305899800800000000000000
+      internalID: 619672672585242516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -857,7 +905,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/__scenes/act3_level1.unity
     guid: b1bd48a6d90da0d42a9d1ee8fe4fb552
   - enabled: 1
-    path: Assets/__scenes/act1/act1_level2.unity
+    path: Assets/__scenes/act1_level2.unity
     guid: 804ff11d0862df44ca95e68bf590e769
   - enabled: 1
     path: Assets/__scenes/act1/act1_level3.unity
