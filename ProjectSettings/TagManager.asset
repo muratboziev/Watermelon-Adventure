@@ -24,6 +24,7 @@ TagManager:
   - pickable_dna
   - pickable_dna_part
   - pickable_pill
+  - cave_enter_exit
   layers:
   - Default
   - TransparentFX
@@ -43,7 +44,7 @@ TagManager:
   - NPC
   - Pickable
   - LevelZone
-  - 
+  - Dungeon_InOut
   - 
   - 
   - 
