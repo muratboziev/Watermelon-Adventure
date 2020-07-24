@@ -30,6 +30,7 @@ public class RequiredLinks
     public PickItem pick_item;
     public PickableItemSpawnManager pickable_manager;
     public AudioManager audio_man;    
+    public EnterExitDungeon enter_exit_dungeon;
 }
 
 public class SceneLoadHandler : MonoBehaviour
@@ -70,7 +71,7 @@ public class SceneLoadHandler : MonoBehaviour
     {        
         scene_load_complete = true;
 
-        if (object_to_link.game_man.load_main != true && scene.name == "start_menu")
+        /*if (object_to_link.game_man.load_main != true && scene.name == "start_menu")
         {
             string sc_to_load = object_to_link.game_man.scene_to_load;
             int act = (int)char.GetNumericValue(sc_to_load[3]); 
@@ -84,7 +85,7 @@ public class SceneLoadHandler : MonoBehaviour
             object_to_link.menu_man.cur_menu_state = object_to_link.menu_man.make_transition(object_to_link.menu_man.cur_menu_state.transition[1]);
             object_to_link.menu_man.cur_menu_state = object_to_link.menu_man.make_transition(object_to_link.menu_man.cur_menu_state.transition[act]);
             object_to_link.menu_man.cur_menu_state = object_to_link.menu_man.make_transition(object_to_link.menu_man.cur_menu_state.transition[1], sc_to_load);
-        }
+        }*/
     }
 
     public static void instantiate_hero_and_allies(Scene scene, LoadSceneMode mode)
@@ -134,7 +135,7 @@ public class SceneLoadHandler : MonoBehaviour
         object_to_link.evo_pan_man = FindObjectOfType<EvoPanelManager>() as EvoPanelManager;
         object_to_link.game_progr = FindObjectOfType<GameProgressSaver>() as GameProgressSaver;
         object_to_link.dialog_man = FindObjectOfType<DialogManager>() as DialogManager;
-        object_to_link.audio_man = FindObjectOfType<AudioManager>() as AudioManager;
+        object_to_link.audio_man = FindObjectOfType<AudioManager>() as AudioManager;        
 
         if (scene.name != "start_menu")
         {
@@ -150,6 +151,7 @@ public class SceneLoadHandler : MonoBehaviour
             object_to_link.UI_gameobject = GameObject.Find("UI");            
             object_to_link.pick_item = FindObjectOfType<PickItem>() as PickItem;
             object_to_link.pickable_manager = FindObjectOfType<PickableItemSpawnManager>() as PickableItemSpawnManager;
+            object_to_link.enter_exit_dungeon = FindObjectOfType<EnterExitDungeon>() as EnterExitDungeon;
 
             object_to_link.ally_spider = FindObjectOfType<AllySpiderController>() as AllySpiderController;
             object_to_link.ally_dragonfly = FindObjectOfType<AllyDragonflyController>() as AllyDragonflyController;
@@ -192,6 +194,11 @@ public class SceneLoadHandler : MonoBehaviour
             object_to_link.bg_scroll_cont.hero_rb2d = object_to_link.hero_cont.rb2d;
 
             object_to_link.pickable_manager.dna_parts_parent_go = GameObject.Find("/dna_parts");
+
+            if (object_to_link.enter_exit_dungeon != null)
+            {
+                object_to_link.enter_exit_dungeon.game_man = object_to_link.game_man;
+            }
 
             //линкуем насекомых-союзников
 

@@ -35,7 +35,9 @@ public class MenuManager : MonoBehaviour
     string cancel_str = "Cancel";          
 
     string friend_saved_str = "friend saved: ", friend_not_saved_str = "friend not saved";
-    string dna_found_str = "dna point found!", dna_not_found_str = "dna point not found";    
+    string dna_found_str = "dna point found!", dna_not_found_str = "dna point not found";
+
+    bool fade_is_done = false;
 
     //---------------------------------------------------------------------------------------------------
 
@@ -102,11 +104,12 @@ public class MenuManager : MonoBehaviour
         cur.back_transition = cur.transition[0];
 
         cur = menu_state["gameplay"];
-        cur.transition = new MenuTransition[3];
+        cur.transition = new MenuTransition[4];
         cur.panel = uiPanel.gameplayContoller;
         cur.transition[0] = new MenuTransition(cur, menu_state["pause"], fade: false, load: false);                     //back pressed
         cur.transition[1] = new MenuTransition(cur, menu_state["level_completed"], fade: true, load: false);            //level completed
         cur.transition[2] = new MenuTransition(cur, menu_state["gameplay"], fade: true, load: true);                    //hero died
+        cur.transition[3] = new MenuTransition(cur, menu_state["gameplay"], fade: true, load: false);                    //enter exit dungeon
         cur.back_transition = cur.transition[0];
 
         cur = menu_state["pause"];
@@ -145,7 +148,7 @@ public class MenuManager : MonoBehaviour
         cur.transition[0] = new MenuTransition(cur, menu_state["main_menu"], fade: true, load: true);       //main menu
         cur.transition[1] = new MenuTransition(cur, menu_state["gameplay"], fade: true, load: true);      //replay              
         cur.transition[2] = new MenuTransition(cur, menu_state["gameplay"], fade: true, load: true);      //next level                
-        cur.back_transition = cur.transition[0];
+        cur.back_transition = cur.transition[0];        
 
         cur_menu_state = menu_state["main_menu"];
 
@@ -482,21 +485,18 @@ public class MenuManager : MonoBehaviour
         return mt.state_to;
     }
 
-
     public IEnumerator menu_transition(MenuTransition mt, string scene_name="")
     {
         Menu_State state_from = mt.state_from;
         Menu_State state_to = mt.state_to;        
         bool with_scene_loading = mt.with_scene_loading;
 
-        bool with_fading = mt.with_fading;
-        bool with_scene_loading_panel = false;
+        bool with_fading = mt.with_fading;        
 
         WaitForSeconds loadTime = new WaitForSeconds(1.2f);   //1
-
-        float elapsedTime = 0;
+        
         float fade_duration = 0.35f;                        
-        float fade_to = 0f, fade_from = 0f;
+        float fade_to_alpha = 0f, fade_from_alpha = 0f;
 
         uiPanel.clickBlocker.gameobj.SetActive(true);
 
@@ -505,17 +505,17 @@ public class MenuManager : MonoBehaviour
 
         if (state_to.name == "buy_evo" || state_from.name == "buy_evo")
         {
-            fade_to = 0.65f;
-            fade_from = 0.65f;
+            fade_to_alpha = 0.65f;
+            fade_from_alpha = 0.65f;
             fade_duration = 0.25f;
         }
-
+        
         if (with_fading)
-        {            
-            while (elapsedTime < fade_duration)
-            {
-                elapsedTime += Time.deltaTime;
-                state_from.panel.canvas.alpha = Mathf.Lerp(1, fade_to, elapsedTime / fade_duration);
+        {
+            StartCoroutine(fade_in_out(state_from.panel, fade_duration, 1, fade_to_alpha));
+
+            while (fade_is_done != true)
+            {                
                 yield return null;
             }
         }
@@ -533,18 +533,12 @@ public class MenuManager : MonoBehaviour
 
         if (with_scene_loading)
         {
-            
-            elapsedTime = 0;
-
-            if (!with_scene_loading_panel)
-                elapsedTime = 3;
-
             uiPanel.loadingPanel.gameobj.SetActive(true);
-            
-            while (elapsedTime < fade_duration)
+
+            StartCoroutine(fade_in_out(uiPanel.loadingPanel, fade_duration, 0, 1));
+
+            while (fade_is_done != true)
             {
-                elapsedTime += Time.deltaTime;
-                uiPanel.loadingPanel.canvas.alpha = Mathf.Lerp(0, 1, elapsedTime / fade_duration);
                 yield return null;
             }
             
@@ -554,17 +548,16 @@ public class MenuManager : MonoBehaviour
 
             SceneManager.LoadScene(scene_name);
 
-            elapsedTime = 0;
 
             while(!SceneLoadHandler.scene_load_complete)
             {
                 yield return null;
             }
 
-            while (elapsedTime < fade_duration)
+            StartCoroutine(fade_in_out(uiPanel.loadingPanel, fade_duration, 1, 0));
+
+            while (fade_is_done != true)
             {
-                elapsedTime += Time.deltaTime;
-                uiPanel.loadingPanel.canvas.alpha = Mathf.Lerp(1, 0, elapsedTime / fade_duration);
                 yield return null;
             }
 
@@ -574,15 +567,13 @@ public class MenuManager : MonoBehaviour
 
         //-------------------------------------------------
 
-        elapsedTime = 0;
         state_to.panel.gameobj.SetActive(true);        
         if (with_fading)
         {
-            elapsedTime = 0;
-            while (elapsedTime < fade_duration)
+            StartCoroutine(fade_in_out(state_to.panel, fade_duration, fade_from_alpha, 1));
+
+            while (fade_is_done != true)
             {
-                elapsedTime += Time.deltaTime;
-                state_to.panel.canvas.alpha = Mathf.Lerp(fade_from, 1, elapsedTime / fade_duration);
                 yield return null;
             }
         }
@@ -594,6 +585,21 @@ public class MenuManager : MonoBehaviour
         //-------------------------------------------------
 
         uiPanel.clickBlocker.gameobj.SetActive(false);
+    }
+
+    IEnumerator fade_in_out(uiPanel panel, float fade_duration, float fade_from, float fade_to)
+    {
+        float elapsed_time = 0;
+
+        fade_is_done = false;
+        while (elapsed_time < fade_duration)
+        {
+            elapsed_time += Time.deltaTime;
+            panel.canvas.alpha = Mathf.Lerp(fade_from, fade_to, elapsed_time / fade_duration);
+            yield return null;
+        }
+
+        fade_is_done = true;
     }
 
 
