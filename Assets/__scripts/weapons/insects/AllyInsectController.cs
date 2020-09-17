@@ -115,8 +115,8 @@ public class AllyInsectController : MonoBehaviour
         attacks = false;
         anim.SetBool(grab_anim_param, false);
 
-        if (attack_sound_audio_clip_name.Equals(weap_man.hero_contr.audio_source_attack_insect.clip))       //не останавливаем звук атаки если проигрывается звук атаки другого насекомого
-            weap_man.hero_contr.audio_source_attack_insect.Stop();
+        if (attack_sound_audio_clip_name.Equals(weap_man.hero_contr.audiosource_attack_insect.clip))       //не останавливаем звук атаки если проигрывается звук атаки другого насекомого
+            weap_man.hero_contr.audiosource_attack_insect.Stop();
 
         gameObject.SetActive(false);
     }

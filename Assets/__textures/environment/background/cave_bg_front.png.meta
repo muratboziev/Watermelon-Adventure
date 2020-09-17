@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: fdbd36cf7a277e641a8daddc630ae4b0
+guid: f819ad037db8a9a4d8480f0734fe5896
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3075754738626486039
-    second: dungeon_entrance_cave_0
+      213: -1419907494760347414
+    second: cave_bg_front_0
+  - first:
+      213: 4257769471998517934
+    second: cave_bg_front_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -76,7 +79,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -88,7 +91,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 256
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -102,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dungeon_entrance_cave_0
+      name: cave_bg_front_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 30
-        width: 130
-        height: 89
+        x: 84
+        y: 327
+        width: 794
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71f5e0483a64faa20800000000000000
-      internalID: 3075754738626486039
+      spriteID: ea269f1b6c2a61b30800000000000000
+      internalID: 4257769471998517934
       vertices: []
       indices: 
       edges: []

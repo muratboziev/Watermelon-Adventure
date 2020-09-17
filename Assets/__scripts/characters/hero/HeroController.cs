@@ -77,13 +77,13 @@ public class HeroController : MonoBehaviour
     public ParticleSystem dnaPS;
 
     [Header("Audio")]
-    public AudioSource audio_source_walk;
-    public AudioSource audio_source_jump;
-    public AudioSource audio_source_attack;
-    public AudioSource audio_source_attack_insect;
-    public AudioSource audio_source_weap_switch;
-    public AudioSource audio_source_hit;
-    public AudioSource audio_source_died;
+    public AudioSource audiosource_walk;
+    public AudioSource audiosource_jump;
+    public AudioSource audiosource_attack;
+    public AudioSource audiosource_attack_insect;
+    public AudioSource audiosource_weap_switch;
+    public AudioSource audiosource_hit;
+    public AudioSource audiosource_died;
 
     [HideInInspector]
     public bool facingRight = true;
@@ -100,7 +100,7 @@ public class HeroController : MonoBehaviour
     Animator anim;    
     Vector2 velocity_limit = new Vector2();
     Impact impact_val = new Impact(0f, 0f, 0f);
-    private WaitForSeconds blink_and_inv_wait_time, time_before_deactivating_hero, wait_for_roll_anim_start;
+    private WaitForSeconds blink_and_inv_wait_time, wait_for_roll_anim_start;
 
     //-------------------------------------------------------      
 
@@ -135,8 +135,7 @@ public class HeroController : MonoBehaviour
         ally_layer = LayerMask.NameToLayer("Ally");
         layer_mask = (1 << ground_layer) | (1 << enemy_layer) | (1 << ally_layer);
 
-        blink_and_inv_wait_time = new WaitForSeconds(recalc_hero_params.blink_and_inv_time);
-        time_before_deactivating_hero = new WaitForSeconds(2.5f); // killEffectParticleSystem.main.startLifetime.constant
+        blink_and_inv_wait_time = new WaitForSeconds(recalc_hero_params.blink_and_inv_time);        
         wait_for_roll_anim_start = new WaitForSeconds(wait_for_roll_start_time);
 
         block_user_control = false;
@@ -174,7 +173,7 @@ public class HeroController : MonoBehaviour
 
             if (weap_man.turn_sound_off_after_attack)
             {   
-                audio_source_attack.Stop();
+                audiosource_attack.Stop();
             }
         }
 
@@ -195,7 +194,7 @@ public class HeroController : MonoBehaviour
         if (grounded && !grounded_prev)                                   //приземлился
         {
             jump_counter = 2;
-            audio_source_walk.Play();
+            audiosource_walk.Play();
         }
 
         check_and_emit_dirt(condition_air : true);
@@ -218,7 +217,7 @@ public class HeroController : MonoBehaviour
             
             if (grounded && (Time.time > prev_walk_sound_play_time + 0.3f * (1 - weap_man.weight)))
             {                
-                audio_source_walk.Play();
+                audiosource_walk.Play();
                 prev_walk_sound_play_time = Time.time + 0.3f;
             }
         }
@@ -238,7 +237,7 @@ public class HeroController : MonoBehaviour
             jump_counter--;
             rb2d.AddForce(Vector2.up * recalc_hero_params.jumpForce * weap_man.weight);
             
-            audio_source_jump.Play();
+            audiosource_jump.Play();
         }
 
         if (attack_pressed)                                                   //attack button pressed
@@ -297,7 +296,7 @@ public class HeroController : MonoBehaviour
 
         if (weap_man.animation_state == HeroState.ROLL)
         {
-            audio_source_walk.Stop();
+            audiosource_walk.Stop();
             impact_val = ImpactType.recoil(recalc_hero_params.roll_force, facingRight);
             check_and_emit_dirt(unconditional: true);
         }
@@ -309,13 +308,13 @@ public class HeroController : MonoBehaviour
         {   
             if (!weap_man.use_2nd_audiosource)
             {
-                audio_source_attack.clip = weap_man.weapon_attack_sound;
-                audio_source_attack.Play();
+                audiosource_attack.clip = weap_man.weapon_attack_sound;
+                audiosource_attack.Play();
             }
             else
             {
-                audio_source_attack_insect.clip = weap_man.weapon_attack_sound;
-                audio_source_attack_insect.Play();
+                audiosource_attack_insect.clip = weap_man.weapon_attack_sound;
+                audiosource_attack_insect.Play();
             }
             next_attack_sound_play_time = Time.time + weap_man.attack_sound_delay;
         }
@@ -445,13 +444,12 @@ public class HeroController : MonoBehaviour
 
                 StartCoroutine(ImpactType.push(rb2d, impact_val));
 
-                audio_source_hit.Play();
+                audiosource_hit.Play();
             }
             else if (rb2d.simulated)                //проверка чтобы не было больше 1 вызова от OnTriggerStay2D в hero_vuln_area
             {
-                StartCoroutine(deactivate_hero());
-
-                audio_source_died.Play();                
+                audiosource_died.Play();
+                game_man.deactivate_hero();                             
             }
         }
     }
@@ -576,21 +574,6 @@ public class HeroController : MonoBehaviour
         yield return null;
     }
 
-    public IEnumerator deactivate_hero()
-    {
-        body.SetActive(false);
-        body_rolls.SetActive(false);        
-        weap_man.dectivate_cur_weapon();
-        rb2d.simulated = false;
-
-        killEffectParticleSystem.Emit(7);        
-
-        yield return time_before_deactivating_hero;
-
-        game_man.stop_enemies();
-        game_man.menu_man.make_transition(game_man.menu_man.cur_menu_state.transition[2], game_man.cur_scene_name);
-    }
-
     //helpers--------------------------------------------------------------------------------------------------------------
 
     int get_direction(bool d)
@@ -617,10 +600,10 @@ public class HeroController : MonoBehaviour
     public void play_weap_switched_sound()
     {
         //if (weap_man.turn_sound_off_after_attack)
-            audio_source_attack.Stop();
+            audiosource_attack.Stop();
 
-        audio_source_weap_switch.clip = weap_man.weapon_pick_sound;
-        audio_source_weap_switch.Play();
+        audiosource_weap_switch.clip = weap_man.weapon_pick_sound;
+        audiosource_weap_switch.Play();
     }
 
 }

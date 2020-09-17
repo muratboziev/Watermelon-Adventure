@@ -109,7 +109,7 @@ public class MenuManager : MonoBehaviour
         cur.transition[0] = new MenuTransition(cur, menu_state["pause"], fade: false, load: false);                     //back pressed
         cur.transition[1] = new MenuTransition(cur, menu_state["level_completed"], fade: true, load: false);            //level completed
         cur.transition[2] = new MenuTransition(cur, menu_state["gameplay"], fade: true, load: true);                    //hero died
-        cur.transition[3] = new MenuTransition(cur, menu_state["gameplay"], fade: true, load: false);                    //enter exit dungeon
+        cur.transition[3] = new MenuTransition(cur, menu_state["gameplay"], fade: true, load: false);                   //enter exit dungeon
         cur.back_transition = cur.transition[0];
 
         cur = menu_state["pause"];

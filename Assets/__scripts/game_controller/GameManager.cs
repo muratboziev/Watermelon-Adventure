@@ -49,6 +49,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public Dictionary<string, Color> preset_colors = new Dictionary<string, Color>();
 
+    private WaitForSeconds time_before_deactivating_hero; 
+
     //--------------------------------------------------------------------------------
 
     private void Start()
@@ -77,7 +79,9 @@ public class GameManager : MonoBehaviour
         {
             npc_scene_dict[cur_npc_data.scene_name] = cur_npc_data;
             npc_name_dict[cur_npc_data.name] = cur_npc_data;
-        }        
+        }
+
+        time_before_deactivating_hero = new WaitForSeconds(2.5f); // killEffectParticleSystem.main.startLifetime.constant
     }
 
     private void OnDisable()
@@ -123,6 +127,31 @@ public class GameManager : MonoBehaviour
             fb.stop_audioSources();
             fb.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         }
+    }
+
+    public void deactivate_hero()    
+    {
+        StartCoroutine(deact_hero());
+    }
+    
+    private IEnumerator deact_hero()
+    { 
+        hero_contr.body.SetActive(false);
+        hero_contr.body_rolls.SetActive(false);
+        hero_contr.weap_man.dectivate_cur_weapon();
+        hero_contr.rb2d.simulated = false;
+
+        hero_contr.audiosource_died.transform.parent = null;
+
+        hero_contr.killEffectParticleSystem.transform.parent = null;         
+        hero_contr.killEffectParticleSystem.Emit(7);
+
+        hero_contr.gameObject.SetActive(false);
+
+        yield return time_before_deactivating_hero;
+
+        hero_contr.game_man.stop_enemies();
+        menu_man.make_transition(menu_man.cur_menu_state.transition[2], cur_scene_name);
     }
 
     public void block_hero_control(bool block_control = false, bool stop_move = false)

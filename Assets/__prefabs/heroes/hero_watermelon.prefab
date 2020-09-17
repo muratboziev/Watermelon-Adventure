@@ -23015,7 +23015,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49121533f89cb9945824f2f00622af94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mobile_input: 0
   initial_hero_params:
     max_hero_hp: 3
     cur_hero_hp: 3
@@ -23111,13 +23110,13 @@ MonoBehaviour:
   killEffectParticleSystem: {fileID: 1581699806198412253}
   moveParticleSystem: {fileID: 1581699806068903445}
   dnaPS: {fileID: 3999213734890236022}
-  audio_source_walk: {fileID: 5810189817066240333}
-  audio_source_jump: {fileID: 7358567305794642167}
-  audio_source_attack: {fileID: 8271250746755917054}
-  audio_source_attack_insect: {fileID: 2837130604095061062}
-  audio_source_weap_switch: {fileID: 8502479909523726552}
-  audio_source_hit: {fileID: 2418998318651828282}
-  audio_source_died: {fileID: 6309150532146754471}
+  audiosource_walk: {fileID: 5810189817066240333}
+  audiosource_jump: {fileID: 7358567305794642167}
+  audiosource_attack: {fileID: 8271250746755917054}
+  audiosource_attack_insect: {fileID: 2837130604095061062}
+  audiosource_weap_switch: {fileID: 8502479909523726552}
+  audiosource_hit: {fileID: 2418998318651828282}
+  audiosource_died: {fileID: 6309150532146754471}
   facingRight: 1
   block_user_control: 0
 --- !u!50 &1581699806039322432
